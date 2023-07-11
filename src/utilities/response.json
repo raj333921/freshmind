@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "id": "Electronics Shopping",
+     "key": "0",
+      "indexList": [
+        {
+          "url": "https://www.google.com",
+          "name": "Google",
+          "desc": "It's global google",
+          "img": ""
+        },
+        {
+          "url": "https://www.google.com",
+          "name": "Google1",
+          "desc": "It's global google",
+          "img": ""
+        }
+      ]
+    }
+  ]
+}

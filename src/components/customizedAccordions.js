@@ -44,8 +44,8 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   borderTop: '1px solid rgba(0, 0, 0, .125)',
 }));
 
-export default function CustomizedAccordions() {
-  const [expanded, setExpanded] = React.useState<string | false>('panel1');
+export default function CustomizedAccordions({id,key,indexList,answer,author,date,category}) {
+  const [expanded, setExpanded] = React.useState('panel1');
 
   const handleChange =
     (panel: string) => (event: React.SyntheticEvent, newExpanded: boolean) => {
