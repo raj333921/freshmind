@@ -14,7 +14,7 @@ let searchOption1 = _.sortBy(searchOption.map((option) => option),'name');
         id="free-solo-demo"
         search
         getOptionLabel ={(option) => option.name +"("+option.desc+")"}
-        options={searchOption}
+        options={searchOption1}
         onChange={(event: any, option: any) => {
             return option?.url ? window.open(option?.url,'_blank'):'';
         }}

@@ -5,15 +5,15 @@
      "key": "0",
       "indexList": [
         {
-          "url": "https://www.google.com",
-          "name": "Google",
-          "desc": "It's global google",
+          "url": "https://www.mediamarkt.be/nl/",
+          "name": "Media Markt",
+          "desc": "It's Electronics shop in Belgium",
           "img": ""
         },
         {
-          "url": "https://www.google.com",
-          "name": "Google1",
-          "desc": "It's global google",
+          "url": "https://www.nl.fnac.be/",
+          "name": "Fnac",
+          "desc": "It's Electronics shop in Belgium",
           "img": ""
         }
       ]

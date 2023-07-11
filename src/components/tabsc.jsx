@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Tabs from '@mui/material/Tabs';
 import FreeSolo from './freeSolo';
+import FreeSoloQuery from './freeSoloQuery';
 import BookmarksIcon from '@mui/icons-material/Bookmarks';
 import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
 import UpcomingIcon from '@mui/icons-material/Upcoming';
@@ -64,6 +65,9 @@ export default function Tabsc({accordian,accordian_query,searchQuery,search}) {
           {accordian}
         </TabPanel>
         <TabPanel value={value} index={1} >
+          <FreeSoloQuery search={searchQuery} />
+                   <br/>
+
           {accordian_query}
         </TabPanel>
         <TabPanel value={value} index={2} >
