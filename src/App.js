@@ -10,6 +10,12 @@ function App() {
       <ResponsiveAppBar />
       </div>
       <Bodyc data={data.data} query={data1.data} />
+
+    <div class="copyright-text">
+      <p>
+        <span class="year"></span> Supported by <b>Rajesh Varikuntla</b>
+      </p>
+    </div>
     </div>
   );
 }

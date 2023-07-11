@@ -54,7 +54,7 @@ export default function Tabsc({accordian,accordian_query,searchQuery,search}) {
     <Box sx={{ width: '100%' }}>
       <Box sx={{ width: '100%', bgcolor: 'background.paper' }}>
             <Tabs value={value} onChange={handleChange} selectionFollowsFocus centered>
-              <Tab icon={<BookmarksIcon />} label="Bookmark's" iconPosition="start" {...a11yProps(0)}/>
+              <Tab icon={<BookmarksIcon />} label="Go To Website's" iconPosition="start" {...a11yProps(0)}/>
               <Tab icon={<QuestionAnswerIcon />} iconPosition="start" label="Suggestions" {...a11yProps(1)}/>
               <Tab icon={<UpcomingIcon />} iconPosition="start" label="Sooner" {...a11yProps(2)}/>
             </Tabs>
