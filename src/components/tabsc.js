@@ -5,6 +5,7 @@ import FreeSoloQuery from './freeSoloQuery';
 import BookmarksIcon from '@mui/icons-material/Bookmarks';
 import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
 import UpcomingIcon from '@mui/icons-material/Upcoming';
+import EventAvailableIcon from '@mui/icons-material/EventAvailable';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
@@ -28,7 +29,7 @@ function TabPanel(props: TabPanelProps) {
       {...other}
     >
       {value === index && (
-        <Box sx={{ p: 3 }}>
+        <Box sx={{ p: 4 }}>
           <Typography>{children}</Typography>
         </Box>
       )}
@@ -43,7 +44,7 @@ function a11yProps(index: number) {
   };
 }
 
-export default function Tabsc({accordian,accordian_query,searchQuery,search}) {
+export default function Tabsc({accordian,accordian_query,searchQuery,search,event}) {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
@@ -56,7 +57,8 @@ export default function Tabsc({accordian,accordian_query,searchQuery,search}) {
             <Tabs value={value} onChange={handleChange} selectionFollowsFocus centered>
               <Tab icon={<BookmarksIcon />} label="Go To Website's" iconPosition="start" {...a11yProps(0)}/>
               <Tab icon={<QuestionAnswerIcon />} iconPosition="start" label="Suggestions" {...a11yProps(1)}/>
-              <Tab icon={<UpcomingIcon />} iconPosition="start" label="Sooner" {...a11yProps(2)}/>
+               <Tab icon={<EventAvailableIcon />} iconPosition="start" label="Events" {...a11yProps(2)}/>
+              <Tab icon={<UpcomingIcon />} iconPosition="start" label="I am soon" {...a11yProps(3)}/>
             </Tabs>
           </Box>
         <TabPanel value={value} index={0} >
@@ -71,7 +73,10 @@ export default function Tabsc({accordian,accordian_query,searchQuery,search}) {
           {accordian_query}
         </TabPanel>
         <TabPanel value={value} index={2} >
-          We soon let you know ;)
+          {event}
+        </TabPanel>
+        <TabPanel value={value} index={3} >
+          We love to serve ... ! let you know ;)
         </TabPanel>
     </Box>
   );

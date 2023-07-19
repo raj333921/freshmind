@@ -1,0 +1,25 @@
+{
+  "data": [
+    {
+      "id": "0",
+      "eventName": "Indian Food Festival 2023",
+      "eventStartDate" : "21/08/2023 11:00 am",
+      "eventEndDate": "22/08/2023 6:00 pm",
+      "location": "Schuman, Brussels, Belgium",
+      "website": "",
+      "facebook": "",
+      "banner": "",
+      "type": "food"
+    },{
+      "id": "1",
+      "eventName": "Vinayaka Chavithi 2023",
+      "eventStartDate" : "21/09/2023 11:00 am",
+      "eventEndDate": "21/09/2023 6:00 pm",
+      "location": "Leuven, Belgium",
+      "website": "",
+      "facebook": "",
+      "banner": "",
+      "type": "devotional"
+    }
+  ]
+}
