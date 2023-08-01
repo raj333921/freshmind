@@ -19,9 +19,8 @@
   ,
     {
       "id": "2",
-      "question": "Are you looking for houses / Appartments / land to buy or rent ?",
+      "question": "Are you looking for Houses / Appartments / Land to Buy or Rent ?",
       "answer": "Visit <a href='https://www.immoweb.be/en/' target='_blank'>Immoweb</a> (All type of rent / buy) <br/> Visit <a href='https://www.bbf.be/' target='_blank'>BBF</a>(All type of Business flats for short and long stay) ",
-
       "author": "RAJESH VARIKUNTLA",
       "date": "23/01/2019",
       "category": "Introduction"
