@@ -1,8 +1,26 @@
 {
   "data": [
     {
+      "id": "Amusement park's",
+      "key": "0",
+      "indexList": [
+        {
+          "url": "https://www.walibi.be/en",
+          "name": "Walibi / Aqualibi Belgium",
+          "desc": "It's Amusement park in Belgium",
+          "img": ""
+        },
+        {
+          "url": "https://www.plopsalanddepanne.be/en",
+          "name": "Plopsaland de panne",
+          "desc": "It's Amusement park in Belgium and they have a lot of other options",
+          "img": ""
+        }
+      ]
+    },
+    {
       "id": "Electronics Shopping",
-     "key": "0",
+     "key": "1",
       "indexList": [
         {
           "url": "https://www.mediamarkt.be/nl/",
@@ -14,6 +32,51 @@
           "url": "https://www.nl.fnac.be/",
           "name": "Fnac",
           "desc": "It's Electronics shop in Belgium",
+          "img": ""
+        },
+        {
+          "url": "https://www.amazon.com.be/",
+          "name": "Amazon Belgium",
+          "desc": "It's Electronics shop in Belgium",
+          "img": ""
+        },
+        {
+          "url": "https://www.amazon.de/",
+          "name": "Amazon Germany",
+          "desc": "It's Online shop in Germany",
+          "img": ""
+        },
+        {
+          "url": "https://www.amazon.fr/",
+          "name": "Amazon France",
+          "desc": "It's Online shop in France",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "Zoo's",
+      "key": "1",
+      "indexList": [
+        {
+          "url": "https://www.zooantwerpen.be/en/",
+          "name": "Antwerpen Zoo",
+          "desc": "It's Zoo in Antwerp, Belgium",
+          "img": ""
+        },        {
+          "url": "https://www.zooplanckendael.be/en/",
+          "name": "Planckendeal Zoo",
+          "desc": "It's Zoo in Mechelen, Belgium",
+          "img": ""
+        },        {
+          "url": "https://www.pairidaiza.eu/en",
+          "name": "Pairidaiza Zoo",
+          "desc": "It's Zoo in Brugelette, Belgium",
+          "img": ""
+        },        {
+          "url": "https://www.pakawipark.be/pk2/",
+          "name": "Pairidaiza Zoo",
+          "desc": "It's Zoo in Mechelen, Belgium",
           "img": ""
         }
       ]
