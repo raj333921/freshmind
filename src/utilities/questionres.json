@@ -33,5 +33,24 @@
       "date": "23/01/2019",
       "category": "Medical/Pharmacies"
     }
+  ,
+    {
+      "id": "4",
+      "question": "Where do I submit my tax file ?",
+      "answer": "Dears you might receive a brown cover post stating tax file for you that you can submit via online or filled hard copy in IT office in Brussels, <br/>Address Boulevard du Jardin Botanique 50, 1000 Bruxelles (Inside botanique metro) <br/> More info <a href='https://www.thebulletin.be/understanding-paper-belgian-income-tax-return' target='_blank'>Bulletin</a> <br/> More info <a href='https://finance.belgium.be/en/about_fps/structure_and_services/general_administrations/taxation' target='_blank'>Finance Belgium</a>",
+      "author": "Krishna Edimadakala ",
+      "date": "08/11/2020",
+      "category": "Finance"
+    },
+    {
+      "id": "5",
+      "question": "Are you looking for applying professional card for becoming freelancer ?",
+      "answer": "More info <a href='https://www.securex.be/en/starting-as-a-self-employed-person' target='_blank'>Securex</a>",
+      "author": "Rajesh Varikuntla ",
+      "date": "08/09/2020",
+      "category": "Business"
+    }
+
+
   ]
 }

@@ -15,6 +15,18 @@
           "name": "Groupon",
           "desc": "Always check for offers",
           "img": ""
+        },
+        {
+          "url": "https://www.kieskeurig.be/",
+          "name": "Kieskeurig",
+          "desc": "kieskeurig is another good site to get the best deals",
+          "img": ""
+        },
+        {
+          "url": "https://www.jouwaanbieding.nl/",
+          "name": "Jouwaanbieding",
+          "desc": "Jouwaanbieding shows the best deals in general",
+          "img": ""
         }
       ]
     },
@@ -113,7 +125,7 @@
       ]
     },
     {
-      "id": "Comparators",
+      "id": "Comparators / Simulators",
       "key": "5",
       "indexList": [
         {
@@ -126,6 +138,12 @@
           "url": "https://www.abvv.be/bereken-je-nettoloon",
           "name": "Salary",
           "desc": "Salary comparator for your package / living",
+          "img": ""
+        },
+        {
+          "url": "https://www.energyprice.be/compare",
+          "name": "Energy",
+          "desc": "Energy / Gas / Electricity comparator for your living",
           "img": ""
         }
       ]
@@ -150,6 +168,161 @@
           "url": "https://white-cinema.be/en",
           "name": "White Cinema",
           "desc": "Cinema / Movies / Culture",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "Trash Calender",
+      "key": "7",
+      "indexList": [
+        {
+          "url": "https://recycleapp.be/",
+          "name": "Recycle Park",
+          "desc": "Waste / Disposable / collection",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "Professional Card / Freelancer / Start business",
+      "key": "7",
+      "indexList": [
+        {
+          "url": "https://www.partena-professional.be/en",
+          "name": "Partena Professional",
+          "desc": "Professional Card / Freelancer / Start business",
+          "img": ""
+        },{
+          "url": "https://www.acerta.be/nl",
+          "name": "Acerta",
+          "desc": "Professional Card / Freelancer / Start business",
+          "img": ""
+        },{
+          "url": "https://www.liantis.be/nl",
+          "name": "Liantis",
+          "desc": "Professional Card / Freelancer / Start business",
+          "img": ""
+        },{
+          "url": "https://www.securex.be/nl",
+          "name": "Securex",
+          "desc": "Professional Card / Freelancer / Start business",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "Gas / Electricity connection",
+      "key": "8",
+      "indexList": [
+        {
+          "url": "https://www.engie.be/nl/energie/vergelijken",
+          "name": "Engie",
+          "desc": "Gas / Electricity connection",
+          "img": ""
+        },{
+          "url": "https://www.luminus.be/nl/prive/",
+          "name": "Luminus",
+          "desc": "Gas / Electricity connection",
+          "img": ""
+        },{
+          "url": "https://eneco.be/nl",
+          "name": "Eneco",
+          "desc": "Gas / Electricity connection",
+          "img": ""
+        },{
+          "url": "https://totalenergies.be/fr/particuliers",
+          "name": "Total Energies",
+          "desc": "Gas / Electricity connection",
+          "img": ""
+        },{
+          "url": "https://www.energyprice.be/compare",
+          "name": "Simulator",
+          "desc": "Gas / Electricity connection simulator for cheap connection",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "Tablets / Medicines / Shampoo's",
+      "key": "10",
+      "indexList": [
+        {
+          "url": "https://www.newpharma.be/pharmacie/",
+          "name": "New Pharma",
+          "desc": "Tablets / Medicines / Shampoo's",
+          "img": ""
+        },{
+          "url": "https://www.farmaline.be/pharmacie/",
+          "name": "Farmaline",
+          "desc": "Tablets / Medicines / Shampoo's",
+          "img": ""
+        },{
+          "url": "https://www.pharmonet.be/en/",
+          "name": "Pharmonet",
+          "desc": "Tablets / Medicines / Shampoo's",
+          "img": ""
+        },{
+          "url": "https://www.pharmamarket.be/be_nl",
+          "name": "Pharmamarket",
+          "desc": "Tablets / Medicines / Shampoo's",
+          "img": ""
+        },{
+          "url": "https://www.lloydspharma.be/",
+          "name": "LLOYDs pharma",
+          "desc": "Tablets / Medicines / Shampoo's",
+          "img": ""
+        },{
+          "url": "https://medi-market.be",
+          "name": "Medi-Market",
+          "desc": "Tablets / Medicines / Shampoo's",
+          "img": ""
+        },{
+          "url": "https://www.viata.be/nl_BE/",
+          "name": "Viata",
+          "desc": "Tablets / Medicines / Shampoo's",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "House / Appartment / Land - RENT/BUY",
+      "key": "7",
+      "indexList": [
+        {
+          "url": "https://www.immoweb.be/en",
+          "name": "Immo web",
+          "desc": "House / Appartment / Land - RENT/BUY",
+          "img": ""
+        },{
+          "url": "https://www.immoscoop.be/",
+          "name": "immoscoop",
+          "desc": "House / Appartment / Land - RENT/BUY",
+          "img": ""
+        },{
+          "url": "https://www.zimmo.be/fr/",
+          "name": "Zimmo",
+          "desc": "House / Appartment / Land - RENT/BUY",
+          "img": ""
+        },{
+          "url": "https://www.spotahome.com/s/brussels",
+          "name": "Spotahome",
+          "desc": "House / Appartment / Land - RENT",
+          "img": ""
+        },{
+          "url": "https://www.eu-rentals.com/",
+          "name": "EU Rentals",
+          "desc": "House / Appartment - RENT",
+          "img": ""
+        },{
+          "url": "https://immo.vlan.be/en",
+          "name": "Immo Vlan",
+          "desc": "House / Appartment / Land - RENT/BUY",
+          "img": ""
+        },{
+          "url": "https://www.bbf.be/",
+          "name": "BBF",
+          "desc": "House / Appartment - RENT",
           "img": ""
         }
       ]
