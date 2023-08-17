@@ -1,8 +1,26 @@
 {
   "data": [
     {
-      "id": "Amusement park's",
+      "id": "Deals",
       "key": "0",
+      "indexList": [
+        {
+          "url": "https://www.socialdeal.be/",
+          "name": "Social Deal",
+          "desc": "Always check for offers",
+          "img": ""
+        },
+        {
+          "url": "https://www.groupon.be/",
+          "name": "Groupon",
+          "desc": "Always check for offers",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "Amusement park's",
+      "key": "1",
       "indexList": [
         {
           "url": "https://www.walibi.be/en",
@@ -20,7 +38,7 @@
     },
     {
       "id": "Electronics Shopping",
-     "key": "1",
+     "key": "2",
       "indexList": [
         {
           "url": "https://www.mediamarkt.be/nl/",
@@ -56,7 +74,7 @@
     },
     {
       "id": "Zoo's",
-      "key": "1",
+      "key": "3",
       "indexList": [
         {
           "url": "https://www.zooantwerpen.be/en/",
@@ -72,11 +90,6 @@
           "url": "https://www.pairidaiza.eu/en",
           "name": "Pairidaiza Zoo",
           "desc": "It's Zoo in Brugelette, Belgium",
-          "img": ""
-        },        {
-          "url": "https://www.pakawipark.be/pk2/",
-          "name": "Pairidaiza Zoo",
-          "desc": "It's Zoo in Mechelen, Belgium",
           "img": ""
         }
       ]
