@@ -24,6 +24,14 @@
       "author": "RAJESH VARIKUNTLA",
       "date": "23/01/2019",
       "category": "Introduction"
+    },
+    {
+      "id": "3",
+      "question": "Are you looking for day / night pharmacies/medical shops near you ?",
+      "answer": "Use your location below website shows you nearest pharmacies, Visit <a href='https://www.apotheek.be' target='_blank'>Apotheek</a> ",
+      "author": "Aneesh ",
+      "date": "23/01/2019",
+      "category": "Medical/Pharmacies"
     }
   ]
 }

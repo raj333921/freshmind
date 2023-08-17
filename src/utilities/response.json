@@ -93,6 +93,42 @@
           "img": ""
         }
       ]
+    },
+    {
+      "id": "Stock Exchange Apps",
+      "key": "4",
+      "indexList": [
+        {
+          "url": "https://www.bolero.be/nl",
+          "name": "Bolero by KBC",
+          "desc": "Invest wisely",
+          "img": ""
+        },
+        {
+          "url": "https://getbux.com",
+          "name": "Bux Zero",
+          "desc": "Invest wisely",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "Comparators",
+      "key": "5",
+      "indexList": [
+        {
+          "url": "https://tweakers.net",
+          "name": "Tweakers",
+          "desc": "Shows the Best electronics prices",
+          "img": ""
+        },
+        {
+          "url": "https://www.abvv.be/bereken-je-nettoloon",
+          "name": "Salary",
+          "desc": "Salary comparator for your package / living",
+          "img": ""
+        }
+      ]
     }
   ]
 }
