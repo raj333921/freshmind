@@ -129,6 +129,30 @@
           "img": ""
         }
       ]
+    },
+    {
+      "id": "Cinema Theatres",
+      "key": "6",
+      "indexList": [
+        {
+          "url": "https://www.ugc.be/",
+          "name": "UGC",
+          "desc": "Cinema / Movies / Culture",
+          "img": ""
+        },
+        {
+          "url": "https://kinepolis.be/fr/",
+          "name": "Kinpolis",
+          "desc": "Cinema / Movies / Culture",
+          "img": ""
+        },
+        {
+          "url": "https://white-cinema.be/en",
+          "name": "White Cinema",
+          "desc": "Cinema / Movies / Culture",
+          "img": ""
+        }
+      ]
     }
   ]
 }

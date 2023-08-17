@@ -6,10 +6,20 @@
       "eventStartDate" : "19/08/2023 11:00 am",
       "eventEndDate": "20/08/2023 6:00 pm",
       "location": "Schuman, Brussels, Belgium",
-      "website": "",
-      "facebook": "",
+      "website": "https://www.indianconfluence.org/",
+      "facebook": "https://www.facebook.com/indianconfluence/",
       "banner": "",
       "type": "food"
+    }, {
+      "id": "1",
+      "eventName": "Jailer Tamil Movie 2023",
+      "eventStartDate" : "19/08/2023",
+      "eventEndDate": "22/08/2023",
+      "location": "Brussels, Belgium",
+      "website": "https://white-cinema.be/en/movie/jailer/",
+      "facebook": "",
+      "banner": "",
+      "type": "movie"
     }
   ]
 }
