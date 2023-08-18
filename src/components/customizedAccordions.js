@@ -59,7 +59,7 @@ export default function CustomizedAccordions({id,key,indexList,answer,author,dat
 
   return (
     <div>
-      <Accordion expanded={expanded === id} onChange={handleChange(id)}>
+      <Accordion sx={{backgroundColor: 'white'}} expanded={expanded === id} onChange={handleChange(id)}>
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
           <Typography>{id}</Typography>
         </AccordionSummary>

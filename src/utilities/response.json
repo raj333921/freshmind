@@ -326,6 +326,39 @@
           "img": ""
         }
       ]
+    },
+    {
+      "id": "Medical Insurance / Mutuality",
+      "key": "11",
+      "indexList": [
+        {
+          "url": "https://www.helan.be/nl/",
+          "name": "Helan",
+          "desc": "Medical Insurance / Mutuality",
+          "img": ""
+        },{
+          "url": "https://www.cm.be/",
+          "name": "CM",
+          "desc": "Medical Insurance / Mutuality",
+          "img": ""
+        }
+      ]
+    },{
+      "id": "Vaccination / Kids Growth",
+      "key": "11",
+      "indexList": [
+        {
+          "url": "https://www.kindengezin.be/nl",
+          "name": "Kindengezin",
+          "desc": "K&G vaccination / kids / infants / Dutch",
+          "img": ""
+        },{
+          "url": "https://www.one.be/public/",
+          "name": "One",
+          "desc": "ONE / Kids / Infants / French",
+          "img": ""
+        }
+      ]
     }
   ]
 }
