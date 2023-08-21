@@ -160,7 +160,7 @@
         },
         {
           "url": "https://kinepolis.be/fr/",
-          "name": "Kinpolis",
+          "name": "Kinipolis",
           "desc": "Cinema / Movies / Culture",
           "img": ""
         },
@@ -185,8 +185,65 @@
       ]
     },
     {
-      "id": "Professional Card / Freelancer / Start business",
+      "id": "Banking / Bank / Investments / Mortgages",
       "key": "7",
+      "indexList": [
+        {
+          "url": "https://www.bnpparibasfortis.be/fr/public/particuliers",
+          "name": "BNPP Fortis",
+          "desc": "Offline/Online only NL/FR",
+          "img": ""
+        },{
+          "url": "https://www.hellobank.be/nl",
+          "name": "Hello Bank",
+          "desc": "Hassle free via Online",
+          "img": ""
+        },{
+          "url": "https://www.fintro.be/fr/public/particuliers",
+          "name": "Fintro",
+          "desc": "Offline/Online only NL/FR",
+          "img": ""
+        },{
+          "url": "https://www.beobank.be/nl/particulier/",
+          "name": "Beo Bank",
+          "desc": "Offline/Online only EN/NL/FR",
+          "img": ""
+        },{
+          "url": "https://www.kbc.be/retail/en.html",
+          "name": "KBC",
+          "desc": "Offline/Online only EN/NL/FR",
+          "img": ""
+        },{
+          "url": "https://www.ing.be/en/retail",
+          "name": "ING",
+          "desc": "Offline/Online only EN/NL/FR",
+          "img": ""
+        },{
+          "url": "https://www.argenta.be/nl.html",
+          "name": "Argenta",
+          "desc": "Offline/Online only NL/FR",
+          "img": ""
+        },{
+          "url": "https://www.crelan.be/nl/particulieren",
+          "name": "Crelan",
+          "desc": "Online/Offline only NL/FR",
+          "img": ""
+        },{
+          "url": "https://www.keytradebank.be/en",
+          "name": "Key Trade Bank",
+          "desc": "Hassle free via Online only NL/FR/EN",
+          "img": ""
+        },{
+          "url": "https://www.bankvanbreda.be/n",
+          "name": "Van Breda",
+          "desc": "Online / Offline only NL/FR",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "Professional Card / Freelancer / Start business",
+      "key": "12",
       "indexList": [
         {
           "url": "https://www.partena-professional.be/en",

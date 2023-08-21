@@ -60,8 +60,12 @@ export default function CustomizedAccordions({id,key,indexList,answer,author,dat
   return (
     <div>
       <Accordion sx={{backgroundColor: 'white'}} expanded={expanded === id} onChange={handleChange(id)}>
+
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
+        <Stack direction="row" spacing={3}>
+          {indexList ? <Chip label={indexList.length} color="primary" size="small" variant="outlined" /> : ''}
           <Typography>{id}</Typography>
+          </Stack>
         </AccordionSummary>
         <AccordionDetails>
         {cardDev}
