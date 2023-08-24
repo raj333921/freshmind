@@ -20,6 +20,26 @@
       "facebook": "",
       "banner": "",
       "type": "movie"
+    }, {
+      "id": "2",
+      "eventName": "Jailer Tamil Movie 2023",
+      "eventStartDate" : "26/08/2023",
+      "eventEndDate": "29/08/2023",
+      "location": "Antwerp, Belgium",
+      "website": "https://kinepolis.be/nl/movies/detail/31314/HO00009720/0/jailer",
+      "facebook": "",
+      "banner": "",
+      "type": "movie"
+    }, {
+      "id": "3",
+      "eventName": "King of Kotha Malayalam Movie 2023",
+      "eventStartDate" : "26/08/2023",
+      "eventEndDate": "26/08/2023",
+      "location": "Antwerp, Belgium",
+      "website": "https://kinepolis.be/nl/movies/detail/31368/HO00009722/0/king-of-kotha",
+      "facebook": "",
+      "banner": "",
+      "type": "movie"
     }
   ]
 }
