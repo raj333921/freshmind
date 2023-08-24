@@ -90,7 +90,7 @@ function ResponsiveAppBar() {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open Quick Contacts">
+            <Tooltip title="Emergencies">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 1 }}>
               <ContactEmergencyTwoToneIcon size="large" sx={{ fontSize: 40,color: "Red" }}/>
               </IconButton>
