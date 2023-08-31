@@ -13,8 +13,11 @@ import CelebrationTwoToneIcon from '@mui/icons-material/CelebrationTwoTone';
 import FastfoodIcon from '@mui/icons-material/Fastfood';
 import Typography from '@mui/material/Typography';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import MovieCreationTwoToneIcon from '@mui/icons-material/MovieCreationTwoTone';
 
 export default function TimeLinec({event}) {
+
+
   return (
     <Timeline position="alternate">
       <TimelineItem>
@@ -35,7 +38,8 @@ export default function TimeLinec({event}) {
         <TimelineSeparator>
           <TimelineConnector />
           <TimelineDot color="primary">
-            {event.type === 'food' ? <FastfoodIcon />: event.type === 'devotional'? <TempleHinduTwoToneIcon />:<CelebrationTwoToneIcon />}
+
+            {event.type === 'food' ? <FastfoodIcon />: event.type === 'devotional'? <TempleHinduTwoToneIcon />:event.type === 'movie'? <MovieCreationTwoToneIcon />:<CelebrationTwoToneIcon />}
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
