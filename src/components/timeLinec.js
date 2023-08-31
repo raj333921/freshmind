@@ -12,6 +12,7 @@ import TempleHinduTwoToneIcon from '@mui/icons-material/TempleHinduTwoTone';
 import CelebrationTwoToneIcon from '@mui/icons-material/CelebrationTwoTone';
 import FastfoodIcon from '@mui/icons-material/Fastfood';
 import Typography from '@mui/material/Typography';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 export default function TimeLinec({event}) {
   return (
@@ -28,6 +29,7 @@ export default function TimeLinec({event}) {
 
           <Typography>{event.website? <a href={event.website} target="_blank" ><PublicIcon /></a>:''}
                {event.facebook? <a href={event.facebook} target="_blank" ><FacebookIcon /></a>:''}
+               {event.whatsapp? <a href={event.whatsapp} target="_blank" ><WhatsAppIcon /></a>:''}
           </Typography>
         </TimelineOppositeContent>
         <TimelineSeparator>
