@@ -17,7 +17,7 @@ const pages = [];
 const settings = [{key:'Ambulance', value: '112', valueTel: 'tel:112'},{key:'Police', value: '101',valueTel:'tel:101'},{key:'Medical Service', value: '100',valueTel:'tel:100'},{key:'Fire', value: '100',valueTel:'tel:100'},{key:'Pharmacy', value: 'Website',valueTel:'https://www.pharmacie.be/'}];
 
 function ResponsiveAppBar() {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -39,24 +39,27 @@ function ResponsiveAppBar() {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            Fresh Mind 1.0
-          </Typography>
+
+            <a href={"/"} > <img src="Freshmind_logo_1.png" alt="Kitten" height="50" width="125" /></a>
+          {/*<AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />*/}
+
+          {/*<Typography*/}
+          {/*  variant="h5"*/}
+          {/*  noWrap*/}
+          {/*  component="a"*/}
+          {/*  href="/"*/}
+          {/*  sx={{*/}
+          {/*    mr: 2,*/}
+          {/*    display: { xs: 'none', md: 'flex' },*/}
+          {/*    fontFamily: 'monospace',*/}
+          {/*    fontWeight: 700,*/}
+          {/*    letterSpacing: '.3rem',*/}
+          {/*    color: 'inherit',*/}
+          {/*    textDecoration: 'none',*/}
+          {/*  }}*/}
+          {/*>*/}
+          {/*  Fresh Mind 1.0*/}
+          {/*</Typography>*/}
 
           <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
           <Typography
