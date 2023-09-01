@@ -1,421 +1,860 @@
-{
-  "data": [
-    {
-      "id": "Deals",
-      "key": "0",
-      "indexList": [
-        {
-          "url": "https://www.socialdeal.be/",
-          "name": "Social Deal",
-          "desc": "Always check for offers for everything",
-          "img": ""
-        },
-        {
-          "url": "https://www.groupon.be/",
-          "name": "Groupon",
-          "desc": "Always check for offers",
-          "img": ""
-        },
-        {
-          "url": "https://www.kieskeurig.be/",
-          "name": "Kieskeurig",
-          "desc": "kieskeurig is another good site to get the best deals",
-          "img": ""
-        },
-        {
-          "url": "https://www.jouwaanbieding.nl/",
-          "name": "Jouwaanbieding",
-          "desc": "Jouwaanbieding shows the best deals in general",
-          "img": ""
-        }
-      ]
-    },
-    {
-      "id": "Amusement park's",
-      "key": "1",
-      "indexList": [
-        {
-          "url": "https://www.walibi.be/en",
-          "name": "Walibi / Aqualibi Belgium",
-          "desc": "It's Amusement park in Belgium",
-          "img": ""
-        },
-        {
-          "url": "https://www.plopsalanddepanne.be/en",
-          "name": "Plopsaland de panne",
-          "desc": "It's Amusement park in Belgium and they have a lot of other options",
-          "img": ""
-        }
-      ]
-    },
-    {
-      "id": "Electronics Shopping",
-     "key": "2",
-      "indexList": [
-        {
-          "url": "https://www.mediamarkt.be/nl/",
-          "name": "Media Markt",
-          "desc": "It's Electronics shop in Belgium",
-          "img": ""
-        },
-        {
-          "url": "https://www.nl.fnac.be/",
-          "name": "Fnac",
-          "desc": "It's Electronics shop in Belgium",
-          "img": ""
-        },
-        {
-          "url": "https://www.amazon.com.be/",
-          "name": "Amazon Belgium",
-          "desc": "It's Electronics shop in Belgium",
-          "img": ""
-        },
-        {
-          "url": "https://www.amazon.de/",
-          "name": "Amazon Germany",
-          "desc": "It's Online shop in Germany",
-          "img": ""
-        },
-        {
-          "url": "https://www.amazon.fr/",
-          "name": "Amazon France",
-          "desc": "It's Online shop in France",
-          "img": ""
-        }
-      ]
-    },
-    {
-      "id": "Zoo's",
-      "key": "3",
-      "indexList": [
-        {
-          "url": "https://www.zooantwerpen.be/en/",
-          "name": "Antwerpen Zoo",
-          "desc": "It's Zoo in Antwerp, Belgium",
-          "img": ""
-        },        {
-          "url": "https://www.zooplanckendael.be/en/",
-          "name": "Planckendeal Zoo",
-          "desc": "It's Zoo in Mechelen, Belgium",
-          "img": ""
-        },        {
-          "url": "https://www.pairidaiza.eu/en",
-          "name": "Pairidaiza Zoo",
-          "desc": "It's Zoo in Brugelette, Belgium",
-          "img": ""
-        }
-      ]
-    },
-    {
-      "id": "Stock Exchange Apps",
-      "key": "4",
-      "indexList": [
-        {
-          "url": "https://www.bolero.be/nl",
-          "name": "Bolero by KBC",
-          "desc": "Invest wisely",
-          "img": ""
-        },
-        {
-          "url": "https://getbux.com",
-          "name": "Bux Zero",
-          "desc": "Invest wisely",
-          "img": ""
-        }
-      ]
-    },
-    {
-      "id": "Comparators / Simulators",
-      "key": "5",
-      "indexList": [
-        {
-          "url": "https://tweakers.net",
-          "name": "Tweakers",
-          "desc": "Shows the Best electronics prices",
-          "img": ""
-        },
-        {
-          "url": "https://www.abvv.be/bereken-je-nettoloon",
-          "name": "Salary",
-          "desc": "Salary comparator for your package / living",
-          "img": ""
-        },
-        {
-          "url": "https://www.energyprice.be/compare",
-          "name": "Energy",
-          "desc": "Energy / Gas / Electricity comparator for your living",
-          "img": ""
-        }
-      ]
-    },
-    {
-      "id": "Cinema Theatres",
-      "key": "6",
-      "indexList": [
-        {
-          "url": "https://www.ugc.be/",
-          "name": "UGC",
-          "desc": "Cinema / Movies / Culture",
-          "img": ""
-        },
-        {
-          "url": "https://kinepolis.be/fr/",
-          "name": "Kinipolis",
-          "desc": "Cinema / Movies / Culture",
-          "img": ""
-        },
-        {
-          "url": "https://white-cinema.be/en",
-          "name": "White Cinema",
-          "desc": "Cinema / Movies / Culture",
-          "img": ""
-        }
-      ]
-    },
-    {
-      "id": "Trash Calender",
-      "key": "7",
-      "indexList": [
-        {
-          "url": "https://recycleapp.be/",
-          "name": "Recycle Park",
-          "desc": "Waste / Disposable / collection",
-          "img": ""
-        }
-      ]
-    },
-    {
-      "id": "Banking / Bank / Investments / Mortgages",
-      "key": "7",
-      "indexList": [
-        {
-          "url": "https://www.bnpparibasfortis.be/fr/public/particuliers",
-          "name": "BNPP Fortis",
-          "desc": "Offline/Online only NL/FR",
-          "img": ""
-        },{
-          "url": "https://www.hellobank.be/nl",
-          "name": "Hello Bank",
-          "desc": "Hassle free via Online",
-          "img": ""
-        },{
-          "url": "https://www.fintro.be/fr/public/particuliers",
-          "name": "Fintro",
-          "desc": "Offline/Online only NL/FR",
-          "img": ""
-        },{
-          "url": "https://www.beobank.be/nl/particulier/",
-          "name": "Beo Bank",
-          "desc": "Offline/Online only EN/NL/FR",
-          "img": ""
-        },{
-          "url": "https://www.kbc.be/retail/en.html",
-          "name": "KBC",
-          "desc": "Offline/Online only EN/NL/FR",
-          "img": ""
-        },{
-          "url": "https://www.ing.be/en/retail",
-          "name": "ING",
-          "desc": "Offline/Online only EN/NL/FR",
-          "img": ""
-        },{
-          "url": "https://www.argenta.be/nl.html",
-          "name": "Argenta",
-          "desc": "Offline/Online only NL/FR",
-          "img": ""
-        },{
-          "url": "https://www.crelan.be/nl/particulieren",
-          "name": "Crelan",
-          "desc": "Online/Offline only NL/FR",
-          "img": ""
-        },{
-          "url": "https://www.keytradebank.be/en",
-          "name": "Key Trade Bank",
-          "desc": "Hassle free via Online only NL/FR/EN",
-          "img": ""
-        },{
-          "url": "https://www.bankvanbreda.be/n",
-          "name": "Van Breda",
-          "desc": "Online / Offline only NL/FR",
-          "img": ""
-        }
-      ]
-    },
-    {
-      "id": "Professional Card / Freelancer / Start business",
-      "key": "12",
-      "indexList": [
-        {
-          "url": "https://www.partena-professional.be/en",
-          "name": "Partena Professional",
-          "desc": "Professional Card / Freelancer / Start business",
-          "img": ""
-        },{
-          "url": "https://www.acerta.be/nl",
-          "name": "Acerta",
-          "desc": "Professional Card / Freelancer / Start business",
-          "img": ""
-        },{
-          "url": "https://www.liantis.be/nl",
-          "name": "Liantis",
-          "desc": "Professional Card / Freelancer / Start business",
-          "img": ""
-        },{
-          "url": "https://www.securex.be/nl",
-          "name": "Securex",
-          "desc": "Professional Card / Freelancer / Start business",
-          "img": ""
-        }
-      ]
-    },
-    {
-      "id": "Gas / Electricity connection",
-      "key": "8",
-      "indexList": [
-        {
-          "url": "https://www.engie.be/nl/energie/vergelijken",
-          "name": "Engie",
-          "desc": "Gas / Electricity connection",
-          "img": ""
-        },{
-          "url": "https://www.luminus.be/nl/prive/",
-          "name": "Luminus",
-          "desc": "Gas / Electricity connection",
-          "img": ""
-        },{
-          "url": "https://eneco.be/nl",
-          "name": "Eneco",
-          "desc": "Gas / Electricity connection",
-          "img": ""
-        },{
-          "url": "https://totalenergies.be/fr/particuliers",
-          "name": "Total Energies",
-          "desc": "Gas / Electricity connection",
-          "img": ""
-        },{
-          "url": "https://www.energyprice.be/compare",
-          "name": "Simulator",
-          "desc": "Gas / Electricity connection simulator for cheap connection",
-          "img": ""
-        }
-      ]
-    },
-    {
-      "id": "Tablets / Medicines / Shampoo's",
-      "key": "10",
-      "indexList": [
-        {
-          "url": "https://www.newpharma.be/pharmacie/",
-          "name": "New Pharma",
-          "desc": "Tablets / Medicines / Shampoo's",
-          "img": ""
-        },{
-          "url": "https://www.farmaline.be/pharmacie/",
-          "name": "Farmaline",
-          "desc": "Tablets / Medicines / Shampoo's",
-          "img": ""
-        },{
-          "url": "https://www.pharmonet.be/en/",
-          "name": "Pharmonet",
-          "desc": "Tablets / Medicines / Shampoo's",
-          "img": ""
-        },{
-          "url": "https://www.pharmamarket.be/be_nl",
-          "name": "Pharmamarket",
-          "desc": "Tablets / Medicines / Shampoo's",
-          "img": ""
-        },{
-          "url": "https://www.lloydspharma.be/",
-          "name": "LLOYDs pharma",
-          "desc": "Tablets / Medicines / Shampoo's",
-          "img": ""
-        },{
-          "url": "https://medi-market.be",
-          "name": "Medi-Market",
-          "desc": "Tablets / Medicines / Shampoo's",
-          "img": ""
-        },{
-          "url": "https://www.viata.be/nl_BE/",
-          "name": "Viata",
-          "desc": "Tablets / Medicines / Shampoo's",
-          "img": ""
-        }
-      ]
-    },
-    {
-      "id": "House / Appartment / Land - RENT/BUY",
-      "key": "7",
-      "indexList": [
-        {
-          "url": "https://www.immoweb.be/en",
-          "name": "Immo web",
-          "desc": "House / Appartment / Land - RENT/BUY",
-          "img": ""
-        },{
-          "url": "https://www.immoscoop.be/",
-          "name": "immoscoop",
-          "desc": "House / Appartment / Land - RENT/BUY",
-          "img": ""
-        },{
-          "url": "https://www.zimmo.be/fr/",
-          "name": "Zimmo",
-          "desc": "House / Appartment / Land - RENT/BUY",
-          "img": ""
-        },{
-          "url": "https://www.spotahome.com/s/brussels",
-          "name": "Spotahome",
-          "desc": "House / Appartment / Land - RENT",
-          "img": ""
-        },{
-          "url": "https://www.eu-rentals.com/",
-          "name": "EU Rentals",
-          "desc": "House / Appartment - RENT",
-          "img": ""
-        },{
-          "url": "https://immo.vlan.be/en",
-          "name": "Immo Vlan",
-          "desc": "House / Appartment / Land - RENT/BUY",
-          "img": ""
-        },{
-          "url": "https://www.bbf.be/",
-          "name": "BBF",
-          "desc": "House / Appartment - RENT",
-          "img": ""
-        }
-      ]
-    },
-    {
-      "id": "Medical Insurance / Mutuality",
-      "key": "11",
-      "indexList": [
-        {
-          "url": "https://www.helan.be/nl/",
-          "name": "Helan",
-          "desc": "Medical Insurance / Mutuality",
-          "img": ""
-        },{
-          "url": "https://www.cm.be/",
-          "name": "CM",
-          "desc": "Medical Insurance / Mutuality",
-          "img": ""
-        }
-      ]
-    },{
-      "id": "Vaccination / Kids Growth",
-      "key": "11",
-      "indexList": [
-        {
-          "url": "https://www.kindengezin.be/nl",
-          "name": "Kindengezin",
-          "desc": "K&G vaccination / kids / infants / Dutch",
-          "img": ""
-        },{
-          "url": "https://www.one.be/public/",
-          "name": "One",
-          "desc": "ONE / Kids / Infants / French",
-          "img": ""
-        }
-      ]
-    }
-  ]
-}
+[
+  {
+    "categoryId": 8,
+    "categoryName": "Amusement Park's",
+    "categoryDesc": "",
+    "categoryType": "PUB",
+    "categoryLoc": "BE",
+    "created_at": "2023-08-27T20:15:35.859Z",
+    "updated_at": "2023-08-31T13:50:50.648Z",
+    "indexes": [
+      {
+        "indexesId": 1,
+        "indexesName": "Walibi / Aqualibi Belgium",
+        "indexesDesc": "It's Amusement park in Belgium",
+        "indexesURL": "https://www.walibi.be/en",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 8,
+        "created_at": "2023-08-27T20:26:36.673Z",
+        "updated_at": "2023-08-31T13:49:04.799Z"
+      },
+      {
+        "indexesId": 2,
+        "indexesName": "Plopsaland de panne",
+        "indexesDesc": "It's Amusement park in Belgium and they have a lot of other options",
+        "indexesURL": "https://www.plopsalanddepanne.be/en",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 8,
+        "created_at": "2023-08-31T19:58:07.208Z",
+        "updated_at": "2023-08-31T19:58:07.208Z"
+      },
+      {
+        "indexesId": 3,
+        "indexesName": "Bellewaerde",
+        "indexesDesc": "It's Amusement park/aqua in Belgium",
+        "indexesURL": "https://www.bellewaerde.be/en",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 8,
+        "created_at": "2023-08-31T20:02:19.261Z",
+        "updated_at": "2023-08-31T20:02:19.261Z"
+      },
+      {
+        "indexesId": 4,
+        "indexesName": "Bobbejaan land",
+        "indexesDesc": "It's Amusement park in Belgium",
+        "indexesURL": "https://www.bobbejaanland.be/",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 8,
+        "created_at": "2023-08-31T20:03:20.726Z",
+        "updated_at": "2023-08-31T20:03:20.726Z"
+      },
+      {
+        "indexesId": 5,
+        "indexesName": "Mini Europe",
+        "indexesDesc": "It's Miniature park in Belgium",
+        "indexesURL": "https://www.minieurope.com/en/",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 8,
+        "created_at": "2023-08-31T20:04:41.585Z",
+        "updated_at": "2023-08-31T20:04:41.585Z"
+      },
+      {
+        "indexesId": 6,
+        "indexesName": "Nature Parc",
+        "indexesDesc": "Cycling/Running/Adventure",
+        "indexesURL": "https://naturaparc.be/fr/",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 8,
+        "created_at": "2023-08-31T20:06:34.775Z",
+        "updated_at": "2023-08-31T20:06:34.775Z"
+      }
+    ]
+  },
+  {
+    "categoryId": 9,
+    "categoryName": "Deals",
+    "categoryDesc": "",
+    "categoryType": "PUB",
+    "categoryLoc": "BE",
+    "created_at": "2023-08-31T20:07:23.732Z",
+    "updated_at": "2023-08-31T20:07:23.732Z",
+    "indexes": [
+      {
+        "indexesId": 7,
+        "indexesName": "Social Deal",
+        "indexesDesc": "Deals acros all cities",
+        "indexesURL": "https://www.socialdeal.be/",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 9,
+        "created_at": "2023-08-31T20:08:11.576Z",
+        "updated_at": "2023-08-31T20:08:11.576Z"
+      },
+      {
+        "indexesId": 8,
+        "indexesName": "Groupon",
+        "indexesDesc": "Always check for offers",
+        "indexesURL": "https://www.groupon.be/",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 9,
+        "created_at": "2023-08-31T20:08:53.235Z",
+        "updated_at": "2023-08-31T20:08:53.235Z"
+      },
+      {
+        "indexesId": 9,
+        "indexesName": "Kieskeurig",
+        "indexesDesc": "kieskeurig is another good site to get the best deals",
+        "indexesURL": "https://www.kieskeurig.be/",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 9,
+        "created_at": "2023-08-31T20:09:31.312Z",
+        "updated_at": "2023-08-31T20:09:31.312Z"
+      },
+      {
+        "indexesId": 10,
+        "indexesName": "Jouwaanbieding",
+        "indexesDesc": "Jouwaanbieding shows the best deals in general",
+        "indexesURL": "https://www.jouwaanbieding.nl/",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 9,
+        "created_at": "2023-08-31T20:10:16.505Z",
+        "updated_at": "2023-08-31T20:10:16.505Z"
+      }
+    ]
+  },
+  {
+    "categoryId": 10,
+    "categoryName": "Electronics Shopping",
+    "categoryDesc": "",
+    "categoryType": "PUB",
+    "categoryLoc": "BE",
+    "created_at": "2023-08-31T20:10:32.383Z",
+    "updated_at": "2023-08-31T20:10:32.383Z",
+    "indexes": [
+      {
+        "indexesId": 11,
+        "indexesName": "Media Markt",
+        "indexesDesc": "It's Electronics shop in Belgium",
+        "indexesURL": "https://www.mediamarkt.be/nl/",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 10,
+        "created_at": "2023-08-31T20:11:22.169Z",
+        "updated_at": "2023-08-31T20:11:22.169Z"
+      },
+      {
+        "indexesId": 12,
+        "indexesName": "Fnac",
+        "indexesDesc": "It's Electronics shop in Belgium",
+        "indexesURL": "https://www.nl.fnac.be/",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 10,
+        "created_at": "2023-08-31T20:11:50.141Z",
+        "updated_at": "2023-08-31T20:11:50.141Z"
+      },
+      {
+        "indexesId": 13,
+        "indexesName": "Amazon Belgium",
+        "indexesDesc": "It's Electronics shop only online Belgium",
+        "indexesURL": "https://www.amazon.com.be/",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 10,
+        "created_at": "2023-08-31T20:12:29.121Z",
+        "updated_at": "2023-08-31T20:12:29.121Z"
+      },
+      {
+        "indexesId": 14,
+        "indexesName": "Amazon Germany",
+        "indexesDesc": "It's Electronics shop only online Germany",
+        "indexesURL": "https://www.amazon.de/",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 10,
+        "created_at": "2023-08-31T20:12:56.601Z",
+        "updated_at": "2023-08-31T20:12:56.601Z"
+      },
+      {
+        "indexesId": 15,
+        "indexesName": "Amazon France",
+        "indexesDesc": "It's Online shop only France delievered to Belgium",
+        "indexesURL": "https://www.amazon.fr/",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 10,
+        "created_at": "2023-08-31T20:13:36.490Z",
+        "updated_at": "2023-08-31T20:13:53.944Z"
+      }
+    ]
+  },
+  {
+    "categoryId": 11,
+    "categoryName": "Stock Exchange Apps",
+    "categoryDesc": "",
+    "categoryType": "PUB",
+    "categoryLoc": "BE",
+    "created_at": "2023-08-31T20:14:18.704Z",
+    "updated_at": "2023-08-31T20:14:18.704Z",
+    "indexes": [
+      {
+        "indexesId": 16,
+        "indexesName": "Bolero by KBC",
+        "indexesDesc": "Invest wisely",
+        "indexesURL": "https://www.bolero.be/nl",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 11,
+        "created_at": "2023-08-31T20:15:22.411Z",
+        "updated_at": "2023-08-31T20:15:22.411Z"
+      },
+      {
+        "indexesId": 17,
+        "indexesName": "Bux Zero",
+        "indexesDesc": "Invest wisely",
+        "indexesURL": "https://getbux.com",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 11,
+        "created_at": "2023-08-31T20:15:49.878Z",
+        "updated_at": "2023-08-31T20:15:49.878Z"
+      }
+    ]
+  },
+  {
+    "categoryId": 12,
+    "categoryName": "Zoo's",
+    "categoryDesc": "",
+    "categoryType": "PUB",
+    "categoryLoc": "BE",
+    "created_at": "2023-08-31T20:16:09.871Z",
+    "updated_at": "2023-08-31T20:16:09.871Z",
+    "indexes": [
+      {
+        "indexesId": 18,
+        "indexesName": "Antwerpen Zoo",
+        "indexesDesc": "It's Zoo in Antwerp, Belgium",
+        "indexesURL": "https://www.zooantwerpen.be/en/",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 12,
+        "created_at": "2023-08-31T20:16:44.775Z",
+        "updated_at": "2023-08-31T20:16:44.775Z"
+      },
+      {
+        "indexesId": 19,
+        "indexesName": "Planckendeal Zoo",
+        "indexesDesc": "It's Zoo in Mechelen, Belgium",
+        "indexesURL": "https://www.zooplanckendael.be/en/",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 12,
+        "created_at": "2023-08-31T20:17:19.370Z",
+        "updated_at": "2023-08-31T20:17:19.370Z"
+      },
+      {
+        "indexesId": 20,
+        "indexesName": "Pairidaiza Zoo",
+        "indexesDesc": "It's Zoo in Brugelette, Belgium",
+        "indexesURL": "https://www.pairidaiza.eu/en",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 12,
+        "created_at": "2023-08-31T20:17:55.365Z",
+        "updated_at": "2023-08-31T20:17:55.365Z"
+      }
+    ]
+  },
+  {
+    "categoryId": 13,
+    "categoryName": "Comparators / Simulators",
+    "categoryDesc": "",
+    "categoryType": "PUB",
+    "categoryLoc": "BE",
+    "created_at": "2023-08-31T20:18:23.456Z",
+    "updated_at": "2023-08-31T20:18:23.456Z",
+    "indexes": [
+      {
+        "indexesId": 21,
+        "indexesName": "Tweakers",
+        "indexesDesc": "Shows the Best electronics prices",
+        "indexesURL": "https://tweakers.net",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 13,
+        "created_at": "2023-08-31T20:19:03.115Z",
+        "updated_at": "2023-08-31T20:19:03.115Z"
+      },
+      {
+        "indexesId": 22,
+        "indexesName": "Salary",
+        "indexesDesc": "Salary comparator for your package / living",
+        "indexesURL": "https://www.abvv.be/bereken-je-nettoloon",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 13,
+        "created_at": "2023-08-31T20:19:46.890Z",
+        "updated_at": "2023-08-31T20:19:46.890Z"
+      },
+      {
+        "indexesId": 23,
+        "indexesName": "Energy",
+        "indexesDesc": "Energy / Gas / Electricity comparator for your living",
+        "indexesURL": "https://www.energyprice.be/compare",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 13,
+        "created_at": "2023-08-31T20:20:13.373Z",
+        "updated_at": "2023-08-31T20:20:13.373Z"
+      },
+      {
+        "indexesId": 24,
+        "indexesName": "UGC",
+        "indexesDesc": "Cinema / Movies / Culture",
+        "indexesURL": "https://www.ugc.be/",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 13,
+        "created_at": "2023-08-31T20:21:06.871Z",
+        "updated_at": "2023-08-31T20:21:06.871Z"
+      },
+      {
+        "indexesId": 25,
+        "indexesName": "Kinipolis",
+        "indexesDesc": "Cinema / Movies / Culture",
+        "indexesURL": "https://kinepolis.be/fr/",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 13,
+        "created_at": "2023-08-31T20:21:23.231Z",
+        "updated_at": "2023-08-31T20:21:23.231Z"
+      },
+      {
+        "indexesId": 26,
+        "indexesName": "White Cinema",
+        "indexesDesc": "Cinema / Movies / Culture",
+        "indexesURL": "https://white-cinema.be/en",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 13,
+        "created_at": "2023-08-31T20:21:41.406Z",
+        "updated_at": "2023-08-31T20:21:41.406Z"
+      }
+    ]
+  },
+  {
+    "categoryId": 15,
+    "categoryName": "Trash Calender - Flemish",
+    "categoryDesc": "",
+    "categoryType": "PUB",
+    "categoryLoc": "BE",
+    "created_at": "2023-08-31T20:22:10.264Z",
+    "updated_at": "2023-08-31T20:22:10.264Z",
+    "indexes": [
+      {
+        "indexesId": 27,
+        "indexesName": "Recycle Park",
+        "indexesDesc": "Waste / Disposable / collection",
+        "indexesURL": "https://recycleapp.be/",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 15,
+        "created_at": "2023-08-31T20:22:50.629Z",
+        "updated_at": "2023-08-31T20:22:50.629Z"
+      }
+    ]
+  },
+  {
+    "categoryId": 16,
+    "categoryName": "Banking / Bank / Investments / Mortgages",
+    "categoryDesc": "",
+    "categoryType": "PUB",
+    "categoryLoc": "BE",
+    "created_at": "2023-08-31T20:23:46.514Z",
+    "updated_at": "2023-08-31T20:23:46.514Z",
+    "indexes": [
+      {
+        "indexesId": 28,
+        "indexesName": "BNPP Fortis",
+        "indexesDesc": "Offline/Online only NL/FR",
+        "indexesURL": "https://www.bnpparibasfortis.be/fr/public/particuliers",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 16,
+        "created_at": "2023-08-31T20:24:37.020Z",
+        "updated_at": "2023-08-31T20:24:37.020Z"
+      },
+      {
+        "indexesId": 30,
+        "indexesName": "Fintro",
+        "indexesDesc": "Offline/Online only NL/FR",
+        "indexesURL": "https://www.fintro.be/fr/public/particuliers",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 16,
+        "created_at": "2023-08-31T20:25:37.678Z",
+        "updated_at": "2023-08-31T20:25:37.678Z"
+      },
+      {
+        "indexesId": 29,
+        "indexesName": "Hello Bank",
+        "indexesDesc": "Hassle free via OnlineR",
+        "indexesURL": "https://www.hellobank.be/nl",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 16,
+        "created_at": "2023-08-31T20:25:07.786Z",
+        "updated_at": "2023-08-31T20:28:25.285Z"
+      },
+      {
+        "indexesId": 31,
+        "indexesName": "Beo Bank",
+        "indexesDesc": "Offline/Online only EN/NL/FR",
+        "indexesURL": "https://www.beobank.be/nl/particulier/",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 16,
+        "created_at": "2023-08-31T20:29:41.971Z",
+        "updated_at": "2023-08-31T20:29:41.971Z"
+      },
+      {
+        "indexesId": 32,
+        "indexesName": "KBC",
+        "indexesDesc": "Offline/Online only EN/NL/FR",
+        "indexesURL": "https://www.kbc.be/retail/en.html",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 16,
+        "created_at": "2023-08-31T20:30:59.999Z",
+        "updated_at": "2023-08-31T20:30:59.999Z"
+      },
+      {
+        "indexesId": 33,
+        "indexesName": "ING",
+        "indexesDesc": "Offline/Online only EN/NL/FR",
+        "indexesURL": "https://www.ing.be/en/retail",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 16,
+        "created_at": "2023-08-31T20:31:12.810Z",
+        "updated_at": "2023-08-31T20:31:12.810Z"
+      },
+      {
+        "indexesId": 34,
+        "indexesName": "Argenta",
+        "indexesDesc": "Offline/Online only NL/FR",
+        "indexesURL": "https://www.argenta.be/nl.html",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 16,
+        "created_at": "2023-08-31T20:31:23.968Z",
+        "updated_at": "2023-08-31T20:31:23.968Z"
+      },
+      {
+        "indexesId": 35,
+        "indexesName": "Crelan",
+        "indexesDesc": "Online/Offline only NL/FR",
+        "indexesURL": "https://www.crelan.be/nl/particulieren",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 16,
+        "created_at": "2023-08-31T20:31:33.925Z",
+        "updated_at": "2023-08-31T20:31:33.925Z"
+      },
+      {
+        "indexesId": 36,
+        "indexesName": "Key Trade Bank",
+        "indexesDesc": "Hassle free via Online only NL/FR/EN",
+        "indexesURL": "https://www.keytradebank.be/en",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 16,
+        "created_at": "2023-08-31T20:31:44.301Z",
+        "updated_at": "2023-08-31T20:31:44.301Z"
+      },
+      {
+        "indexesId": 37,
+        "indexesName": "Van Breda",
+        "indexesDesc": "Online / Offline only NL/FR",
+        "indexesURL": "https://www.bankvanbreda.be/n",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 16,
+        "created_at": "2023-08-31T20:31:55.407Z",
+        "updated_at": "2023-08-31T20:31:55.407Z"
+      }
+    ]
+  },
+  {
+    "categoryId": 17,
+    "categoryName": "Professional Card / Freelancer / Start business",
+    "categoryDesc": "",
+    "categoryType": "PUB",
+    "categoryLoc": "BE",
+    "created_at": "2023-08-31T20:32:16.377Z",
+    "updated_at": "2023-08-31T20:32:16.377Z",
+    "indexes": [
+      {
+        "indexesId": 38,
+        "indexesName": "Partena Professional",
+        "indexesDesc": "Professional Card / Freelancer / Start business",
+        "indexesURL": "https://www.partena-professional.be/en",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 17,
+        "created_at": "2023-08-31T20:32:28.060Z",
+        "updated_at": "2023-08-31T20:34:20.193Z"
+      },
+      {
+        "indexesId": 39,
+        "indexesName": "Acerta",
+        "indexesDesc": "Professional Card / Freelancer / Start business",
+        "indexesURL": "https://www.acerta.be/nl",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 17,
+        "created_at": "2023-08-31T20:32:37.380Z",
+        "updated_at": "2023-08-31T20:34:56.443Z"
+      },
+      {
+        "indexesId": 40,
+        "indexesName": "Liantis",
+        "indexesDesc": "Professional Card / Freelancer / Start business",
+        "indexesURL": "https://www.liantis.be/nl",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 17,
+        "created_at": "2023-08-31T20:32:47.121Z",
+        "updated_at": "2023-08-31T20:35:28.729Z"
+      },
+      {
+        "indexesId": 41,
+        "indexesName": "Securex",
+        "indexesDesc": "Professional Card / Freelancer / Start business",
+        "indexesURL": "https://www.securex.be/nl",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 17,
+        "created_at": "2023-08-31T20:32:56.636Z",
+        "updated_at": "2023-08-31T20:36:01.641Z"
+      }
+    ]
+  },
+  {
+    "categoryId": 18,
+    "categoryName": "Gas / Electricity connection",
+    "categoryDesc": "",
+    "categoryType": "PUB",
+    "categoryLoc": "BE",
+    "created_at": "2023-08-31T20:36:32.772Z",
+    "updated_at": "2023-08-31T20:36:32.772Z",
+    "indexes": [
+      {
+        "indexesId": 44,
+        "indexesName": "Engie",
+        "indexesDesc": "Gas / Electricity connection",
+        "indexesURL": "https://www.engie.be/nl/energie/vergelijken",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 18,
+        "created_at": "2023-08-31T20:37:29.996Z",
+        "updated_at": "2023-08-31T20:37:29.996Z"
+      },
+      {
+        "indexesId": 45,
+        "indexesName": "Luminus",
+        "indexesDesc": "Gas / Electricity connection",
+        "indexesURL": "https://www.luminus.be/nl/prive/",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 18,
+        "created_at": "2023-08-31T20:37:41.954Z",
+        "updated_at": "2023-08-31T20:37:41.954Z"
+      },
+      {
+        "indexesId": 46,
+        "indexesName": "Eneco",
+        "indexesDesc": "Gas / Electricity connection",
+        "indexesURL": "https://eneco.be/nl",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 18,
+        "created_at": "2023-08-31T20:37:51.624Z",
+        "updated_at": "2023-08-31T20:37:51.624Z"
+      },
+      {
+        "indexesId": 47,
+        "indexesName": "Total Energies",
+        "indexesDesc": "Gas / Electricity connection",
+        "indexesURL": "https://totalenergies.be/fr/particuliers",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 18,
+        "created_at": "2023-08-31T20:38:02.307Z",
+        "updated_at": "2023-08-31T20:38:02.307Z"
+      },
+      {
+        "indexesId": 48,
+        "indexesName": "Simulator",
+        "indexesDesc": "Gas / Electricity connection simulator for cheap connection",
+        "indexesURL": "https://www.energyprice.be/compare",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 18,
+        "created_at": "2023-08-31T20:38:12.646Z",
+        "updated_at": "2023-08-31T20:38:12.646Z"
+      }
+    ]
+  },
+  {
+    "categoryId": 19,
+    "categoryName": "Tablets / Medicines / Shampoo's",
+    "categoryDesc": "",
+    "categoryType": "PUB",
+    "categoryLoc": "BE",
+    "created_at": "2023-08-31T20:38:39.416Z",
+    "updated_at": "2023-08-31T20:38:39.416Z",
+    "indexes": [
+      {
+        "indexesId": 49,
+        "indexesName": "New Pharma",
+        "indexesDesc": "Tablets / Medicines / Shampoo's",
+        "indexesURL": "https://www.newpharma.be/pharmacie/",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 19,
+        "created_at": "2023-08-31T20:38:52.567Z",
+        "updated_at": "2023-08-31T20:38:52.567Z"
+      },
+      {
+        "indexesId": 50,
+        "indexesName": "Farmaline",
+        "indexesDesc": "Tablets / Medicines / Shampoo's",
+        "indexesURL": "https://www.farmaline.be/pharmacie/",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 19,
+        "created_at": "2023-08-31T20:39:01.832Z",
+        "updated_at": "2023-08-31T20:39:01.832Z"
+      },
+      {
+        "indexesId": 51,
+        "indexesName": "Pharmonet",
+        "indexesDesc": "Tablets / Medicines / Shampoo's",
+        "indexesURL": "https://www.pharmonet.be/en/",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 19,
+        "created_at": "2023-08-31T20:39:11.369Z",
+        "updated_at": "2023-08-31T20:39:11.369Z"
+      },
+      {
+        "indexesId": 52,
+        "indexesName": "Pharmamarket",
+        "indexesDesc": "Tablets / Medicines / Shampoo's",
+        "indexesURL": "https://www.pharmamarket.be/be_nl",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 19,
+        "created_at": "2023-08-31T20:39:19.792Z",
+        "updated_at": "2023-08-31T20:39:19.792Z"
+      },
+      {
+        "indexesId": 53,
+        "indexesName": "LLOYDs pharma",
+        "indexesDesc": "Tablets / Medicines / Shampoo's",
+        "indexesURL": "https://www.lloydspharma.be/",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 19,
+        "created_at": "2023-08-31T20:39:32.442Z",
+        "updated_at": "2023-08-31T20:39:32.442Z"
+      },
+      {
+        "indexesId": 54,
+        "indexesName": "Medi-Market",
+        "indexesDesc": "Tablets / Medicines / Shampoo's",
+        "indexesURL": "https://medi-market.be",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 19,
+        "created_at": "2023-08-31T20:39:44.548Z",
+        "updated_at": "2023-08-31T20:39:44.548Z"
+      },
+      {
+        "indexesId": 55,
+        "indexesName": "Viata",
+        "indexesDesc": "Tablets / Medicines / Shampoo's",
+        "indexesURL": "https://www.viata.be/nl_BE/",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 19,
+        "created_at": "2023-08-31T20:39:53.506Z",
+        "updated_at": "2023-08-31T20:39:53.506Z"
+      }
+    ]
+  },
+  {
+    "categoryId": 20,
+    "categoryName": "Medical Insurance / Mutuality",
+    "categoryDesc": "",
+    "categoryType": "PUB",
+    "categoryLoc": "BE",
+    "created_at": "2023-08-31T20:40:29.985Z",
+    "updated_at": "2023-08-31T20:40:29.985Z",
+    "indexes": [
+      {
+        "indexesId": 56,
+        "indexesName": "Helan",
+        "indexesDesc": "Medical Insurance / Mutuality",
+        "indexesURL": "https://www.helan.be/nl/",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 20,
+        "created_at": "2023-08-31T20:40:50.474Z",
+        "updated_at": "2023-08-31T20:40:50.474Z"
+      },
+      {
+        "indexesId": 57,
+        "indexesName": "CM",
+        "indexesDesc": "Medical Insurance / Mutuality",
+        "indexesURL": "https://www.cm.be/",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 20,
+        "created_at": "2023-08-31T20:40:58.945Z",
+        "updated_at": "2023-08-31T20:40:58.945Z"
+      }
+    ]
+  },
+  {
+    "categoryId": 21,
+    "categoryName": "Vaccination / Kids Growth",
+    "categoryDesc": "",
+    "categoryType": "PUB",
+    "categoryLoc": "BE",
+    "created_at": "2023-08-31T20:41:16.482Z",
+    "updated_at": "2023-08-31T20:41:16.482Z",
+    "indexes": [
+      {
+        "indexesId": 58,
+        "indexesName": "Kindengezin",
+        "indexesDesc": "K&G vaccination / kids / infants / Dutch",
+        "indexesURL": "https://www.kindengezin.be/nl",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 21,
+        "created_at": "2023-08-31T20:41:32.140Z",
+        "updated_at": "2023-08-31T20:41:32.140Z"
+      },
+      {
+        "indexesId": 59,
+        "indexesName": "One",
+        "indexesDesc": "ONE / Kids / Infants / French",
+        "indexesURL": "https://www.one.be/public/",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 21,
+        "created_at": "2023-08-31T20:41:41.827Z",
+        "updated_at": "2023-08-31T20:41:41.827Z"
+      }
+    ]
+  },
+  {
+    "categoryId": 22,
+    "categoryName": "House / Appartment / Land - RENT/BUY",
+    "categoryDesc": "",
+    "categoryType": "PUB",
+    "categoryLoc": "BE",
+    "created_at": "2023-08-31T20:42:46.957Z",
+    "updated_at": "2023-08-31T20:42:46.957Z",
+    "indexes": [
+      {
+        "indexesId": 60,
+        "indexesName": "Immo web",
+        "indexesDesc": "House / Appartment / Land - RENT/BUY",
+        "indexesURL": "https://www.immoweb.be/en",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 22,
+        "created_at": "2023-08-31T20:43:05.451Z",
+        "updated_at": "2023-08-31T20:43:05.451Z"
+      },
+      {
+        "indexesId": 61,
+        "indexesName": "immoscoop",
+        "indexesDesc": "House / Appartment / Land - RENT/BUY",
+        "indexesURL": "https://www.immoscoop.be/",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 22,
+        "created_at": "2023-08-31T20:43:19.632Z",
+        "updated_at": "2023-08-31T20:43:19.632Z"
+      },
+      {
+        "indexesId": 62,
+        "indexesName": "Zimmo",
+        "indexesDesc": "House / Appartment / Land - RENT/BUY",
+        "indexesURL": "https://www.zimmo.be/fr/",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 22,
+        "created_at": "2023-08-31T20:43:32.222Z",
+        "updated_at": "2023-08-31T20:43:32.222Z"
+      },
+      {
+        "indexesId": 63,
+        "indexesName": "Spotahome",
+        "indexesDesc": "House / Appartment / Land - RENT",
+        "indexesURL": "https://www.spotahome.com/s/brussels",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 22,
+        "created_at": "2023-08-31T20:43:45.037Z",
+        "updated_at": "2023-08-31T20:43:45.037Z"
+      },
+      {
+        "indexesId": 64,
+        "indexesName": "EU Rentals",
+        "indexesDesc": "House / Appartment - RENT",
+        "indexesURL": "https://www.eu-rentals.com/",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 22,
+        "created_at": "2023-08-31T20:43:58.005Z",
+        "updated_at": "2023-08-31T20:43:58.005Z"
+      },
+      {
+        "indexesId": 65,
+        "indexesName": "Immo Vlan",
+        "indexesDesc": "House / Appartment / Land - RENT/BUY",
+        "indexesURL": "https://immo.vlan.be/en",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 22,
+        "created_at": "2023-08-31T20:44:07.118Z",
+        "updated_at": "2023-08-31T20:44:07.118Z"
+      },
+      {
+        "indexesId": 66,
+        "indexesName": "BBF",
+        "indexesDesc": "House / Appartment - RENT",
+        "indexesURL": "https://www.bbf.be/",
+        "indexesType": "PUB",
+        "indexesLoc": "BE",
+        "categoryId": 22,
+        "created_at": "2023-08-31T20:44:15.311Z",
+        "updated_at": "2023-08-31T20:44:15.311Z"
+      }
+    ]
+  }
+]

@@ -54,24 +54,24 @@ export default function Tabsc({accordian,accordian_query,searchQuery,search,even
     <Box sx={{ width: '100%' }}>
       <Box sx={{ width: '100%', bgcolor: 'background.paper' }}>
             <Tabs value={value} onChange={handleChange} selectionFollowsFocus centered>
-              <Tab icon={<BookmarksIcon />} label="Go To Web" iconPosition="end" {...a11yProps(0)}/>
-              <Tab icon={<QuestionAnswerIcon />} iconPosition="end" label="Advice" {...a11yProps(1)}/>
-               <Tab icon={<EventAvailableIcon />} iconPosition="end" label="Events" {...a11yProps(2)}/>
+               <Tab icon={<EventAvailableIcon />} iconPosition="end" label="Events" {...a11yProps(0)}/>
+              <Tab icon={<BookmarksIcon />} label="Go To Web" iconPosition="end" {...a11yProps(1)}/>
+              <Tab icon={<QuestionAnswerIcon />} iconPosition="end" label="Advice" {...a11yProps(2)}/>
             </Tabs>
           </Box>
         <TabPanel value={value} index={0} >
+          {event}
+        </TabPanel>
+        <TabPanel value={value} index={1} >
           <FreeSolo search={search} />
           <br/>
           {accordian}
         </TabPanel>
-        <TabPanel value={value} index={1} >
+        <TabPanel value={value} index={2} >
           <FreeSoloQuery search={searchQuery} />
                    <br/>
 
           {accordian_query}
-        </TabPanel>
-        <TabPanel value={value} index={2} >
-          {event}
         </TabPanel>
         <TabPanel value={value} index={3} >
           We love to serve ... ! let you know ;)

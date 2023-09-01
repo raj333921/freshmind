@@ -1,67 +1,100 @@
-{
-  "data": [
-    {
-      "id": "0",
-      "eventName": "Indian Food Festival 2023",
-      "eventStartDate" : "19/08/2023 11:00 am",
-      "eventEndDate": "20/08/2023 6:00 pm",
-      "location": "Schuman, Brussels, Belgium",
-      "website": "https://www.indianconfluence.org/",
-      "facebook": "https://www.facebook.com/indianconfluence/",
-      "banner": "",
-      "type": "food"
-    }, {
-      "id": "1",
-      "eventName": "Jailer, Tamil Movie 2023",
-      "eventStartDate" : "19/08/2023",
-      "eventEndDate": "22/08/2023",
-      "location": "Brussels, Belgium",
-      "website": "https://white-cinema.be/en/movie/jailer/",
-      "facebook": "",
-      "banner": "",
-      "type": "movie"
-    }, {
-      "id": "2",
-      "eventName": "Jailer, Tamil Movie 2023",
-      "eventStartDate" : "26/08/2023",
-      "eventEndDate": "29/08/2023",
-      "location": "Antwerp, Belgium",
-      "website": "https://kinepolis.be/nl/movies/detail/31314/HO00009720/0/jailer",
-      "facebook": "",
-      "banner": "",
-      "type": "movie"
-    }, {
-      "id": "3",
-      "eventName": "King of Kotha, Malayalam Movie 2023",
-      "eventStartDate" : "26/08/2023",
-      "eventEndDate": "26/08/2023",
-      "location": "Antwerp, Belgium",
-      "website": "https://kinepolis.be/nl/movies/detail/31368/HO00009722/0/king-of-kotha",
-      "facebook": "",
-      "banner": "",
-      "type": "movie"
-    }, {
-      "id": "4",
-      "eventName": "Khushi, Telugu Movie 2023",
-      "eventStartDate" : "31/08/2023",
-      "eventEndDate": "03/09/2023",
-      "location": "Brussels & Antwerp, Belgium",
-      "website": "https://kinepolis.be/nl/movies/detail/31412/HO00009762/0/kushi",
-      "facebook": "",
-      "banner": "",
-      "type": "movie"
-    },
-    {
-      "id": "5",
-      "eventName": "Gudumba Shankar, Telugu Movie Re-Release 2023",
-      "eventStartDate" : "01/09/2023",
-      "eventEndDate": "01/09/2023",
-      "location": "Brussels, Belgium",
-      "website": "",
-      "facebook": "",
-      "banner": "",
-      "whatsapp": "https://wa.me/+32465176485",
-      "type": "movie"
-    }
-  ]
-}
+[
+  {
+    "eventId": 2,
+    "eventName": "Indian Food Festival 2023",
+    "eventStartDate": "19/08/2023 11:00 am",
+    "eventEndDate": "20/08/2023 6:00 pm",
+    "location": "Schuman, Brussels, Belgium",
+    "website": "https://www.indianconfluence.org/",
+    "facebook": "https://www.facebook.com/indianconfluence/",
+    "banner": "",
+    "whatsapp": "",
+    "type": "food",
+    "created_at": "2023-08-31T20:50:06.169Z",
+    "updated_at": "2023-08-31T20:50:06.169Z"
+  },
+  {
+    "eventId": 3,
+    "eventName": "Jailer, Tamil Movie 2023",
+    "eventStartDate": "19/08/2023",
+    "eventEndDate": "22/08/2023",
+    "location": "Brussels, Belgium",
+    "website": "https://white-cinema.be/en/movie/jailer/",
+    "facebook": "",
+    "banner": "",
+    "whatsapp": "",
+    "type": "movie",
+    "created_at": "2023-08-31T20:51:28.703Z",
+    "updated_at": "2023-08-31T20:51:28.703Z"
+  },
+  {
+    "eventId": 4,
+    "eventName": "Jailer, Tamil Movie 2023",
+    "eventStartDate": "26/08/2023",
+    "eventEndDate": "29/08/2023",
+    "location": "Antwerp, Belgium",
+    "website": "https://kinepolis.be/nl/movies/detail/31314/HO00009720/0/jailer",
+    "facebook": "",
+    "banner": "",
+    "whatsapp": "",
+    "type": "movie",
+    "created_at": "2023-08-31T20:51:46.934Z",
+    "updated_at": "2023-08-31T20:51:46.934Z"
+  },
+  {
+    "eventId": 5,
+    "eventName": "King of Kotha, Malayalam Movie 2023",
+    "eventStartDate": "26/08/2023",
+    "eventEndDate": "26/08/2023",
+    "location": "Antwerp, Belgium",
+    "website": "https://kinepolis.be/nl/movies/detail/31368/HO00009722/0/king-of-kotha",
+    "facebook": "",
+    "banner": "",
+    "whatsapp": "",
+    "type": "movie",
+    "created_at": "2023-08-31T20:52:00.166Z",
+    "updated_at": "2023-08-31T20:52:00.166Z"
+  },
+  {
+    "eventId": 6,
+    "eventName": "Khushi, Telugu Movie 2023",
+    "eventStartDate": "31/08/2023",
+    "eventEndDate": "03/09/2023",
+    "location": "Brussels & Antwerp, Belgium",
+    "website": "https://kinepolis.be/nl/movies/detail/31412/HO00009762/0/kushi",
+    "facebook": "",
+    "banner": "",
+    "whatsapp": "",
+    "type": "movie",
+    "created_at": "2023-08-31T20:52:15.164Z",
+    "updated_at": "2023-08-31T20:52:15.164Z"
+  },
+  {
+    "eventId": 7,
+    "eventName": "Gudumba Shankar, Telugu Movie Re-Release 2023",
+    "eventStartDate": "01/09/2023",
+    "eventEndDate": "01/09/2023",
+    "location": "Brussels, Belgium",
+    "website": "",
+    "facebook": "",
+    "banner": "",
+    "whatsapp": "https://wa.me/+32465176485",
+    "type": "movie",
+    "created_at": "2023-08-31T20:52:29.802Z",
+    "updated_at": "2023-08-31T20:52:29.802Z"
+  },
+  {
+    "eventId": 8,
+    "eventName": "Vinayaka Chavithi, Leuven",
+    "eventStartDate": "23/09/2023 10 AM",
+    "eventEndDate": "23/09/2023 8 PM",
+    "location": "Leuven, Belgium",
+    "website": "https://forms.gle/TS9UM31Y8aTmcyAz7",
+    "facebook": "",
+    "banner": "",
+    "whatsapp": "https://wa.me/+32472560358",
+    "type": "devotional",
+    "created_at": "2023-08-31T20:52:43.411Z",
+    "updated_at": "2023-08-31T20:52:43.411Z"
+  }
+]

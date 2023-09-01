@@ -5,15 +5,15 @@ import Autocomplete from '@mui/material/Autocomplete';
 import _ from 'underscore';
 
 export default function FreeSolo({search}) {
-let searchOption = _.flatten(search.map((option) => option.indexList));
+let searchOption = _.flatten(search.map((option) => option.indexes));
 console.log(searchOption);
-let searchOption1 = _.sortBy(searchOption.map((option) => option),'name');
+let searchOption1 = _.sortBy(searchOption.map((option) => option),'indexesName');
   return (
     <Stack direction={'column-reverse'}>
       <Autocomplete
         id="free-solo-demo"
         search
-        getOptionLabel ={(option) => option.name +" ("+option.desc+")"}
+        getOptionLabel ={(option) => option.indexesName +" ("+option.indexesDesc+")"}
         options={searchOption1}
         onChange={(event: any, option: any) => {
             return option?.url ? window.open(option?.url,'_blank'):'';
