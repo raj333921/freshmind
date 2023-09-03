@@ -1,56 +1,62 @@
-{
-  "data": [
-    {
-      "id": "0",
-      "question": "Do you want to know about Brussels ?",
-      "answer": "Visit <a href='https://visit.brussels/en' target='_blank'>Brussels</a> ",
-      "author": "RAJESH VARIKUNTLA",
-      "date": "23/01/2016",
-      "category": "Introduction"
-    },
-    {
-      "id": "1",
-      "question": "Are you looking for Indian Embassy ?",
-      "answer": "Visit <a href='https://www.indianembassybrussels.gov.in/' target='_blank'>Embassy</a> ",
-      "author": "RAJESH VARIKUNTLA",
-      "date": "23/01/2019",
-      "category": "Introduction"
-    }
-  ,
-    {
-      "id": "2",
-      "question": "Are you looking for Houses / Appartments / Land to Buy or Rent ?",
-      "answer": "Visit <a href='https://www.immoweb.be/en/' target='_blank'>Immoweb</a> (All type of rent / buy) <br/> Visit <a href='https://www.bbf.be/' target='_blank'>BBF</a>(All type of Business flats for short and long stay) ",
-      "author": "RAJESH VARIKUNTLA",
-      "date": "23/01/2019",
-      "category": "Introduction"
-    },
-    {
-      "id": "3",
-      "question": "Are you looking for day / night pharmacies/medical shops near you ?",
-      "answer": "Use your location below website shows you nearest pharmacies, Visit <a href='https://www.apotheek.be' target='_blank'>Apotheek</a> ",
-      "author": "Aneesh ",
-      "date": "23/01/2019",
-      "category": "Medical/Pharmacies"
-    }
-  ,
-    {
-      "id": "4",
-      "question": "Where do I submit my tax file ?",
-      "answer": "Dears you might receive a brown cover post stating tax file for you that you can submit via online or filled hard copy in IT office in Brussels, <br/>Address Boulevard du Jardin Botanique 50, 1000 Bruxelles (Inside botanique metro) <br/> More info <a href='https://www.thebulletin.be/understanding-paper-belgian-income-tax-return' target='_blank'>Bulletin</a> <br/> More info <a href='https://finance.belgium.be/en/about_fps/structure_and_services/general_administrations/taxation' target='_blank'>Finance Belgium</a>",
-      "author": "Krishna Edimadakala ",
-      "date": "08/11/2020",
-      "category": "Finance"
-    },
-    {
-      "id": "5",
-      "question": "Are you looking for applying professional card for becoming freelancer ?",
-      "answer": "More info <a href='https://www.securex.be/en/starting-as-a-self-employed-person' target='_blank'>Securex</a>",
-      "author": "Rajesh Varikuntla ",
-      "date": "08/09/2020",
-      "category": "Business"
-    }
-
-
-  ]
-}
+[
+  {
+    "faqId": 1,
+    "faqQuestion": "Do you want to know about Brussels ?",
+    "faqAnswer": "Visit <a href='https://visit.brussels/en' target='_blank'>Brussels</a> ",
+    "faqAuthor": "RAJESH VARIKUNTLA",
+    "faqCategory": "Introduction",
+    "faqLoc": "BE",
+    "created_at": "2023-09-03T21:19:04.662Z",
+    "updated_at": "2023-09-03T21:19:04.662Z"
+  },
+  {
+    "faqId": 2,
+    "faqQuestion": "Are you looking for applying professional card for becoming freelancer ?",
+    "faqAnswer": "More info <a href='https://www.securex.be/en/starting-as-a-self-employed-person' target='_blank'>Securex</a>",
+    "faqAuthor": "Rajesh Varikuntla ",
+    "faqCategory": "Business",
+    "faqLoc": "BE",
+    "created_at": "2023-09-03T21:22:12.343Z",
+    "updated_at": "2023-09-03T21:22:12.343Z"
+  },
+  {
+    "faqId": 3,
+    "faqQuestion": "Where do I submit my tax file ?",
+    "faqAnswer": "Dears you might receive a brown cover post stating tax file for you that you can submit via online or filled hard copy in IT office in Brussels, <br/>Address Boulevard du Jardin Botanique 50, 1000 Bruxelles (Inside botanique metro) <br/> More info <a href='https://www.thebulletin.be/understanding-paper-belgian-income-tax-return' target='_blank'>Bulletin</a> <br/> More info <a href='https://finance.belgium.be/en/about_fps/structure_and_services/general_administrations/taxation' target='_blank'>Finance Belgium</a>",
+    "faqAuthor": "Krishna Edimadakala ",
+    "faqCategory": "Finance",
+    "faqLoc": "BE",
+    "created_at": "2023-09-03T21:22:23.801Z",
+    "updated_at": "2023-09-03T21:22:23.801Z"
+  },
+  {
+    "faqId": 4,
+    "faqQuestion": "Are you looking for day / night pharmacies/medical shops near you ?",
+    "faqAnswer": "Use your location below website shows you nearest pharmacies, Visit <a href='https://www.apotheek.be' target='_blank'>Apotheek</a> ",
+    "faqAuthor": "Aneesh ",
+    "faqCategory": "Medical/Pharmacies",
+    "faqLoc": "BE",
+    "created_at": "2023-09-03T21:22:40.252Z",
+    "updated_at": "2023-09-03T21:22:40.252Z"
+  },
+  {
+    "faqId": 5,
+    "faqQuestion": "Are you looking for Indian Embassy ?",
+    "faqAnswer": "Visit <a href='https://www.indianembassybrussels.gov.in/' target='_blank'>Embassy</a> ",
+    "faqAuthor": "RAJESH VARIKUNTLA",
+    "faqCategory": "Introduction",
+    "faqLoc": "BE",
+    "created_at": "2023-09-03T21:23:02.846Z",
+    "updated_at": "2023-09-03T21:23:02.846Z"
+  },
+  {
+    "faqId": 6,
+    "faqQuestion": "Are you looking for Houses / Appartments / Land to Buy or Rent ?",
+    "faqAnswer": "Visit <a href='https://www.immoweb.be/en/' target='_blank'>Immoweb</a> (All type of rent / buy) <br/> Visit <a href='https://www.bbf.be/' target='_blank'>BBF</a>(All type of Business flats for short and long stay) ",
+    "faqAuthor": "RAJESH VARIKUNTLA",
+    "faqCategory": "Introduction",
+    "faqLoc": "BE",
+    "created_at": "2023-09-03T21:23:13.462Z",
+    "updated_at": "2023-09-03T21:23:13.462Z"
+  }
+]

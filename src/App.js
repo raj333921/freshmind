@@ -9,17 +9,20 @@ import React from 'react';
 function App() {
  const [indexData,setIndexData] = React.useState(null);
  const [eventData,setEventData] = React.useState(null);
+ const [faqData,setFaqData] = React.useState(null);
 
  const endpoints = [
    '/freshdb/categoryindexes',
-   '/freshdb/events'
+   '/freshdb/events',
+   '/freshdb/faq'
  ];
 
  React.useEffect(()=>{
    axios.all(endpoints.map((endpoint) => axios.get(endpoint))).then(
-     axios.spread(({data: index}, {data:event}) => {
+     axios.spread(({data: index}, {data:event}, {data:faq}) => {
      setIndexData(index);
      setEventData(event);
+     setFaqData(faq);
      })
    );
  },[]);
@@ -29,7 +32,7 @@ function App() {
     <div className="">
       <ResponsiveAppBar />
       </div>
-      {indexData ? <Bodyc data={indexData} query={data1.data} event={eventData}/> : ''}
+      {indexData ? <Bodyc data={indexData} query={faqData} event={eventData}/> : ''}
     </div>
   );
 }
