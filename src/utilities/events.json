@@ -2,7 +2,7 @@
   {
     "eventId": 2,
     "eventName": "Indian Food Festival 2023",
-    "eventStartDate": "19/08/2023 11:00 am",
+    "eventStartDate": "19/08/2023",
     "eventEndDate": "20/08/2023 6:00 pm",
     "location": "Schuman, Brussels, Belgium",
     "website": "https://www.indianconfluence.org/",
@@ -10,6 +10,7 @@
     "banner": "",
     "whatsapp": "",
     "type": "food",
+    "eventLoc": null,
     "created_at": "2023-08-31T20:50:06.169Z",
     "updated_at": "2023-08-31T20:50:06.169Z"
   },
@@ -24,6 +25,7 @@
     "banner": "",
     "whatsapp": "",
     "type": "movie",
+    "eventLoc": null,
     "created_at": "2023-08-31T20:51:28.703Z",
     "updated_at": "2023-08-31T20:51:28.703Z"
   },
@@ -38,6 +40,7 @@
     "banner": "",
     "whatsapp": "",
     "type": "movie",
+    "eventLoc": null,
     "created_at": "2023-08-31T20:51:46.934Z",
     "updated_at": "2023-08-31T20:51:46.934Z"
   },
@@ -52,6 +55,7 @@
     "banner": "",
     "whatsapp": "",
     "type": "movie",
+    "eventLoc": null,
     "created_at": "2023-08-31T20:52:00.166Z",
     "updated_at": "2023-08-31T20:52:00.166Z"
   },
@@ -66,6 +70,7 @@
     "banner": "",
     "whatsapp": "",
     "type": "movie",
+    "eventLoc": null,
     "created_at": "2023-08-31T20:52:15.164Z",
     "updated_at": "2023-08-31T20:52:15.164Z"
   },
@@ -80,13 +85,14 @@
     "banner": "",
     "whatsapp": "https://wa.me/+32465176485",
     "type": "movie",
+    "eventLoc": null,
     "created_at": "2023-08-31T20:52:29.802Z",
     "updated_at": "2023-08-31T20:52:29.802Z"
   },
   {
     "eventId": 8,
     "eventName": "Vinayaka Chavithi, Leuven",
-    "eventStartDate": "23/09/2023 10 AM",
+    "eventStartDate": "23/09/2023",
     "eventEndDate": "23/09/2023 8 PM",
     "location": "Leuven, Belgium",
     "website": "https://forms.gle/TS9UM31Y8aTmcyAz7",
@@ -94,7 +100,83 @@
     "banner": "",
     "whatsapp": "https://wa.me/+32472560358",
     "type": "devotional",
+    "eventLoc": null,
     "created_at": "2023-08-31T20:52:43.411Z",
     "updated_at": "2023-08-31T20:52:43.411Z"
+  },
+  {
+    "eventId": 9,
+    "eventName": "Ganesh Chaturthi, Balen",
+    "eventStartDate": "23/09/2023",
+    "eventEndDate": "23/09/2023 10 PM",
+    "location": "2490 Balen, Belgium",
+    "website": "https://indianassociation.be/",
+    "facebook": "",
+    "banner": "",
+    "whatsapp": "",
+    "type": "devotional",
+    "eventLoc": null,
+    "created_at": "2023-08-31T21:12:26.986Z",
+    "updated_at": "2023-08-31T21:12:26.986Z"
+  },
+  {
+    "eventId": 10,
+    "eventName": "Jawan, Hindi Movie",
+    "eventStartDate": "07/09/2023",
+    "eventEndDate": "10/09/2023",
+    "location": "Brussels,Antwerp,Hasselt,Gent & Liege, Belgium",
+    "website": "https://kinepolis.be/nl/movies/detail/30910/HO00009421/0/jawan",
+    "facebook": "",
+    "banner": "",
+    "whatsapp": "",
+    "type": "movie",
+    "eventLoc": null,
+    "created_at": "2023-08-31T21:16:00.801Z",
+    "updated_at": "2023-08-31T21:16:00.801Z"
+  },
+  {
+    "eventId": 11,
+    "eventName": "Saptha Sagaradaache Ello, Kannada Movie 2023",
+    "eventStartDate": "01/09/2023",
+    "eventEndDate": "03/09/2023",
+    "location": "Brussels, Belgium",
+    "website": "https://kinepolis.be/nl/movies/detail/31345/HO00009723/0/saptha-sagaradaache-ello",
+    "facebook": "",
+    "banner": "",
+    "whatsapp": "",
+    "type": "movie",
+    "eventLoc": null,
+    "created_at": "2023-08-31T21:19:42.438Z",
+    "updated_at": "2023-08-31T21:19:42.438Z"
+  },
+  {
+    "eventId": 12,
+    "eventName": "Ganesh Chaturthi 2023",
+    "eventStartDate": "18/09/2023 ",
+    "eventEndDate": "19/09/2023 7 PM",
+    "location": "Antwerp, Belgium",
+    "website": "https://www.facebook.com/indutsava.be",
+    "facebook": "",
+    "banner": "",
+    "whatsapp": "",
+    "type": "devotional",
+    "eventLoc": "BE",
+    "created_at": "2023-09-03T20:34:29.010Z",
+    "updated_at": "2023-09-03T20:52:59.164Z"
+  },
+  {
+    "eventId": 19,
+    "eventName": "Miss Shetty Me Polishetty Telugu 2023",
+    "eventStartDate": "09/09/2023",
+    "eventEndDate": "10/09/2023",
+    "location": "White Cinema, Brussels, Belgium",
+    "website": "https://white-cinema.be/en/movie/mr-shetty-mrs-polishetty/",
+    "facebook": "",
+    "banner": "",
+    "whatsapp": "",
+    "type": "movie",
+    "eventLoc": "BE",
+    "created_at": "2023-09-05T18:55:14.462Z",
+    "updated_at": "2023-09-05T18:56:35.596Z"
   }
 ]

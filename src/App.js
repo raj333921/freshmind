@@ -12,9 +12,9 @@ function App() {
  const [faqData,setFaqData] = React.useState(null);
 
  const endpoints = [
-   '/freshdb/categoryindexes',
-   '/freshdb/events',
-   '/freshdb/faq'
+   'https://sachadigi.com/freshdb/categoryindexes',
+   'https://sachadigi.com/freshdb/events',
+   'https://sachadigi.com/freshdb/faq'
  ];
 
  React.useEffect(()=>{
