@@ -39,12 +39,12 @@ function ResponsiveAppBar() {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          <AdbIcon size="large" sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Typography
             variant="h6"
             noWrap
             component="a"
-            href="/"
+            href="/freshmind2"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -63,7 +63,7 @@ function ResponsiveAppBar() {
             variant="h5"
             noWrap
             component="a"
-            href="/"
+            href="/freshmind2"
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
@@ -92,7 +92,7 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Emergencies">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 1 }}>
-              <ContactEmergencyTwoToneIcon size="large" sx={{ fontSize: 40,color: "Red" }}/>
+              <ContactEmergencyTwoToneIcon size="large" sx={{ fontSize: 40,color: "#F012CB" }}/>
               </IconButton>
             </Tooltip>
             <Menu
@@ -113,7 +113,7 @@ function ResponsiveAppBar() {
             >
               {_.sortBy(settings, 'key').map((setting) => (
                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting.key} :</Typography>
+                  <Typography textAlign="center">{setting.key} : </Typography>
                   <a href={setting.valueTel}>{setting.value}</a>
                 </MenuItem>
               ))}
