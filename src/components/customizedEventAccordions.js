@@ -63,6 +63,18 @@ export default function CustomizedEventAccordions({eventName,type,startDate,endD
       setExpanded(newExpanded ? panel : false);
     };
 
+  const dateCheck = (d1) => {
+    var date1 = new Date(startDate).getTime();
+    var date2 = new Date().getTime();
+if (date1 < date2) {
+    return 1;
+  } else if (date1 > date2) {
+    return 2;
+  } else {
+    return 2;
+  }
+
+  }
   return (
     <div>
       <Accordion sx={{backgroundColor: 'white'}} expanded={expanded === eventName} onChange={handleChange(eventName)}>
@@ -71,14 +83,15 @@ export default function CustomizedEventAccordions({eventName,type,startDate,endD
         <Stack direction="row" spacing={3}>
          {type === 'food' ? <FastfoodIcon />: type === 'devotional'? <TempleHinduTwoToneIcon />:type === 'movie'? <MovieCreationTwoToneIcon />:<CelebrationTwoToneIcon />}
            <Typography>{eventName}</Typography>
-          </Stack>
+            {dateCheck(startDate) === 1 ? <Chip label="Completed" color="error" variant="outlined" />:<Chip label="Upcoming" color="success" variant="outlined" />}
+       </Stack>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
           To book / register / watch more for information <br /><br />
           {website? <a href={website} target="_blank" ><PublicIcon /></a>:''}
           {facebook? <a href={facebook} target="_blank" ><FacebookIcon /></a>:''}
-          {whatsapp? <a href={whatsapp} target="_blank" ><WhatsAppIcon /></a>:''}
+          {whatsapp? <a href={whatsapp} target="_blank" ><WhatsA
 
           </Typography><br />
           {"Location: "+location}<br /><br />
