@@ -63,6 +63,12 @@ export default function CustomizedEventAccordions({eventName,type,startDate,endD
       setExpanded(newExpanded ? panel : false);
     };
 
+const dataFormat = (dat) => {
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+var d= new Date(dat);
+return d.getDate()+'-'+months[d.getMonth()] +'-'+d.getFullYear();
+}
+
   const dateCheck = (d1) => {
     var date1 = new Date(startDate).getTime();
     var date2 = new Date().getTime();
@@ -91,14 +97,14 @@ if (date1 < date2) {
           To book / register / watch more for information <br /><br />
           {website? <a href={website} target="_blank" ><PublicIcon /></a>:''}
           {facebook? <a href={facebook} target="_blank" ><FacebookIcon /></a>:''}
-          {whatsapp? <a href={whatsapp} target="_blank" ><WhatsA
+          {whatsapp? <a href={whatsapp} target="_blank" ><WhatsAppIcon /></a>:''}
 
           </Typography><br />
-          {"Location: "+location}<br /><br />
+          {"Location: "+mapLocation}<br /><br />
         <br />
         <Stack direction="row" spacing={2}>
-          {startDate ? <Chip label={"Start : " + startDate} color="success" variant="outlined" />:''}
-          {endDate ? <Chip label={"End: "+ endDate} color="error" variant="outlined" />:''}
+          {startDate ? <Chip label={"Start : " + dataFormat(startDate)} color="success" variant="outlined" />:''}
+          {endDate ? <Chip label={"End: "+ dataFormat(endDate)} color="error" variant="outlined" />:''}
         </Stack>
         </AccordionDetails>
       </Accordion>

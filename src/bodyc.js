@@ -5,8 +5,10 @@ import Tabsc from './components/tabsc'
 import _ from 'underscore'
 const Bodyc = ({data,query,event}) => {
 
-const dataFormat = (date) => {
-return date.substring(0,10);
+const dataFormat = (dat) => {
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+var d= new Date(dat);
+return d.getDate()+'-'+months[d.getMonth()] +'-'+d.getFullYear();
 }
 const accordian = _.sortBy(data, 'categoryName').map(link => <CustomizedAccordians key={link.id} id={link.name} indexList={link.indexes} date={link.date} author={link.author} category={link.category} />);
 const accordian_query = query.map(link => <CustomizedAccordians key={link.id} id={link.question} answer={link.answer} date={link.created_at} author={link.author} category={link.category} />);
