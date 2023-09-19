@@ -49,7 +49,7 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 
 export default function CustomizedAccordions({id,key,indexList,answer,author,date,category}) {
 
-  const cardDev = indexList?.map(index => <Cardc url={index.indexesURL} name={index.indexesName} desc={index.indexesDesc} img={index.img}></Cardc> );
+  const cardDev = indexList?.map(index => <Cardc url={index.url} name={index.name} desc={index.description} img={index.img}></Cardc> );
   const [expanded, setExpanded] = React.useState('panel1');
 
   const handleChange =

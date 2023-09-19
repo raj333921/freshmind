@@ -17,7 +17,7 @@ function App() {
  const endpoints = [
    'https://sachadigi.com/freshdb/categoryindexes',
    'https://sachadigi.com/freshdb/events',
-   'https://sachadigi.com/freshdb/faq'
+   'https://sachadigi.com/freshdb/faqs'
  ];
 
  React.useEffect(()=>{
@@ -39,7 +39,7 @@ function App() {
                        </Box> }
       <ResponsiveAppBar />
       </div>
-      {indexData ? <Bodyc data={indexData} query={faqData} event={eventData}/> : ''}
+      {indexData ? <Bodyc data={indexData} query={faqData} event={eventData}/> : 'It\'s trying to load ! If you are seeing an empty page, try to refresh browser'}
     </div>
   );
 }
