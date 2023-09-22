@@ -17,6 +17,9 @@ import CelebrationTwoToneIcon from '@mui/icons-material/CelebrationTwoTone';
 import FastfoodIcon from '@mui/icons-material/Fastfood';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import MovieCreationTwoToneIcon from '@mui/icons-material/MovieCreationTwoTone';
+import EuroTwoToneIcon from '@mui/icons-material/EuroTwoTone';
+import Badge from '@mui/material/Badge';
+import MailIcon from '@mui/icons-material/Mail';
 
 const Accordion = styled((props: AccordionProps) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -54,7 +57,7 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   borderTop: '1px solid rgba(0, 0, 0, .125)',
 }));
 
-export default function CustomizedEventAccordions({eventName,type,startDate,endDate,website,facebook,whatsapp,location}) {
+export default function CustomizedEventAccordions({eventName,type,startDate,endDate,website,facebook,whatsapp,location,price}) {
 
   const [expanded, setExpanded] = React.useState('panel1');
 
@@ -81,6 +84,9 @@ if (date1 < date2) {
   }
 
   }
+
+  const priceCostBadge = '€';
+  const freeCostBadge = '0€';
   return (
     <div>
       <Accordion sx={{backgroundColor: 'white'}} expanded={expanded === eventName} onChange={handleChange(eventName)}>
@@ -89,8 +95,18 @@ if (date1 < date2) {
         <Stack direction="row" spacing={3}>
          {type === 'food' ? <FastfoodIcon />: type === 'devotional'? <TempleHinduTwoToneIcon />:type === 'movie'? <MovieCreationTwoToneIcon />:<CelebrationTwoToneIcon />}
            <Typography>{eventName}</Typography>
-            {dateCheck(startDate) === 1 ? <Chip label="Completed" color="error" variant="outlined" />:<Chip label="Upcoming" color="success" variant="outlined" />}
+            {dateCheck(startDate) === 1 ? <Chip label="Completed" color="error" variant="outlined" />:<Chip label="Upcoming" color="primary" variant="outlined" />}
+
        </Stack>
+       <Stack spacing={3} direction="row">
+             {price === 'P' ? <Badge badgeContent={priceCostBadge} color="warning" anchorOrigin={{
+                                                                            vertical: 'bottom',
+                                                                            horizontal: 'right',
+                                                                          }}/>: (price === 'F')? <Badge badgeContent={freeCostBadge} color="success" anchorOrigin={{
+                                                                                                                                                                                                                        vertical: 'bottom',
+                                                                                                                                                                                                                        horizontal: 'right',
+                                                                                                                                                                                                                      }} />:''}
+           </Stack>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -101,11 +117,18 @@ if (date1 < date2) {
 
           </Typography><br />
           {"Location: "+location}<br /><br />
-        <br />
-        <Stack direction="row" spacing={2}>
+         {"Pricing: "}+{price === 'P' ? <Badge badgeContent={priceCostBadge} color="warning"/>: (price === 'F')? <Badge badgeContent={freeCostBadge} color="success" />:''}
+         <br />
+         <br />
+        <Stack direction="row" spacing={1}>
           {startDate ? <Chip label={"Start : " + dataFormat(startDate)} color="success" variant="outlined" />:''}
           {endDate ? <Chip label={"End: "+ dataFormat(endDate)} color="error" variant="outlined" />:''}
         </Stack>
+
+
+       <Stack spacing={3} direction="row">
+
+           </Stack>
         </AccordionDetails>
       </Accordion>
     </div>
