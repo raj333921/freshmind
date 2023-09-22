@@ -12,7 +12,7 @@ return d.getDate()+'-'+months[d.getMonth()] +'-'+d.getFullYear();
 }
 const accordian = _.sortBy(data, 'categoryName').map(link => <CustomizedAccordians key={link.id} id={link.name} indexList={link.indexes} date={link.date} author={link.author} category={link.category} />);
 const accordian_query = query.map(link => <CustomizedAccordians key={link.id} id={link.question} answer={link.answer} date={link.created_at} author={link.author} category={link.category} />);
-const accordian_event = _.sortBy(event, 'startDate').reverse().map(link => <CustomizedEventAccordions type={link.type} eventName={link.name+" on "+dataFormat(link.startDate)} endDate={link.endDate} startDate={link.startDate} website={link.website} facebook={link.facebook} whatsapp={link.whatsapp} location={link.location}/>);
+const accordian_event = _.sortBy(event, 'startDate').reverse().map(link => <CustomizedEventAccordions type={link.type} eventName={link.name+" on "+dataFormat(link.startDate)} endDate={link.endDate} startDate={link.startDate} website={link.website} facebook={link.facebook} whatsapp={link.whatsapp} location={link.mapLocation}/>);
 
 const eventTimeLine = _.sortBy(event, 'eventId').reverse().map(link => <TimeLinec event={link}/>);
 return(

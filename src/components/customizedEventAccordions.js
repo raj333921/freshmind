@@ -100,7 +100,7 @@ if (date1 < date2) {
           {whatsapp? <a href={whatsapp} target="_blank" ><WhatsAppIcon /></a>:''}
 
           </Typography><br />
-          {"Location: "+mapLocation}<br /><br />
+          {"Location: "+location}<br /><br />
         <br />
         <Stack direction="row" spacing={2}>
           {startDate ? <Chip label={"Start : " + dataFormat(startDate)} color="success" variant="outlined" />:''}
