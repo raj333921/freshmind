@@ -14,7 +14,7 @@ import ContactEmergencyTwoToneIcon from '@mui/icons-material/ContactEmergencyTwo
 import _ from 'underscore';
 
 const pages = [];
-const settings = [{key:'Ambulance', value: '112', valueTel: 'tel:112'},{key:'Police', value: '101',valueTel:'tel:101'},{key:'Medical Service', value: '100',valueTel:'tel:100'},{key:'Fire', value: '100',valueTel:'tel:100'},{key:'Pharmacy', value: 'Website',valueTel:'https://www.pharmacie.be/'}];
+const settings = [{key:'Ambulance', value: '112', valueTel: 'tel:112'},{key:'Police', value: '101',valueTel:'tel:101'},{key:'Medical Service', value: '100',valueTel:'tel:100'},{key:'Fire', value: '100',valueTel:'tel:100'},{key:'Pharmacy', value: 'Website',valueTel:'https://www.pharmacie.be/'},{key:'Region', value: 'Belgium',valueTel:''}];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -113,8 +113,8 @@ function ResponsiveAppBar() {
             >
               {_.sortBy(settings, 'key').map((setting) => (
                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting.key} : </Typography>
-                  <a href={setting.valueTel}>{setting.value}</a>
+                  <Typography textAlign="center">{setting.key}{" : "}</Typography>
+                  {setting.valueTel ? <a href={setting.valueTel}>{setting.value}</a> : setting.value}
                 </MenuItem>
               ))}
             </Menu>

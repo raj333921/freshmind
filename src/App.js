@@ -16,7 +16,7 @@ function App() {
 
  const endpoints = [
    'https://sachadigi.com/freshdb/categoryindexes',
-   'https://sachadigi.com/freshdb/events',
+   'https://sachadigi.com/freshdb/eventamenities',
    'https://sachadigi.com/freshdb/faqs'
  ];
 
