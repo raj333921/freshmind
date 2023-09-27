@@ -73,16 +73,15 @@ return d.getDate()+'-'+months[d.getMonth()] +'-'+d.getFullYear();
 }
 
   const dateCheck = (d1) => {
-    var date1 = new Date(startDate).getTime();
+    var date1 = new Date(d1).getTime();
     var date2 = new Date().getTime();
-if (date1 < date2) {
-    return 1;
-  } else if (date1 > date2) {
-    return 2;
-  } else {
-    return 2;
-  }
-
+    if (date1 < date2) {
+         return 1;
+    } else if (date1 > date2) {
+         return 2;
+    } else {
+         return 2;
+    }
   }
 
   const priceCostBadge = '€';
@@ -99,13 +98,8 @@ if (date1 < date2) {
 
        </Stack>
        <Stack spacing={3} direction="row">
-             {price === 'P' ? <Badge badgeContent={priceCostBadge} color="warning" anchorOrigin={{
-                                                                            vertical: 'bottom',
-                                                                            horizontal: 'right',
-                                                                          }}/>: (price === 'F')? <Badge badgeContent={freeCostBadge} color="success" anchorOrigin={{
-                                                                                                                                                                                                                        vertical: 'bottom',
-                                                                                                                                                                                                                        horizontal: 'right',
-                                                                                                                                                                                                                      }} />:''}
+             {price === 'P' ? <Badge badgeContent={priceCostBadge} color="warning" anchorOrigin={{vertical: 'bottom',horizontal: 'right'
+              }}/>: (price === 'F')? <Badge badgeContent={freeCostBadge} color="success" anchorOrigin={{ vertical: 'bottom',horizontal: 'right'}} />:''}
            </Stack>
         </AccordionSummary>
         <AccordionDetails>
