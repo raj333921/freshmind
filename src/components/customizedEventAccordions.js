@@ -114,10 +114,9 @@ return d.getDate()+'-'+months[d.getMonth()] +'-'+d.getFullYear();
          {"Pricing: "}+{price === 'P' ? <Badge badgeContent={priceCostBadge} color="warning"/>: (price === 'F')? <Badge badgeContent={freeCostBadge} color="success" />:''}
          <br />
          <br />
-        <Stack direction="row" spacing={1}>
-          {startDate ? <Chip label={"Start : " + dataFormat(startDate)} color="success" variant="outlined" />:''}
+          {startDate ? <Chip label={"Start : " + dataFormat(startDate)} color="success" variant="outlined" />:''}<br /><br />
           {endDate ? <Chip label={"End: "+ dataFormat(endDate)} color="error" variant="outlined" />:''}
-        </Stack>
+
 
 
        <Stack spacing={3} direction="row">
