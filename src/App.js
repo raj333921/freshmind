@@ -38,7 +38,7 @@ var d= new Date(dat);
 return d.getDate()+'-'+months[d.getMonth()] +'-'+d.getFullYear();
 }
 const dateCheck = (d1) => {
-    var date1 = new Date(d1).getTime();
+    var date1 = new Date(d1).getTime()+86400000;
     var date2 = new Date().getTime();
     if (date1 < date2) {
          return 1;

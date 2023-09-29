@@ -19,6 +19,7 @@ import TempleHinduTwoToneIcon from '@mui/icons-material/TempleHinduTwoTone';
 import CelebrationTwoToneIcon from '@mui/icons-material/CelebrationTwoTone';
 import FastfoodIcon from '@mui/icons-material/Fastfood';
 import MovieCreationTwoToneIcon from '@mui/icons-material/MovieCreationTwoTone';
+import FiberNewTwoToneIcon from '@mui/icons-material/FiberNewTwoTone';
 
 const pages = [];
 const settings = [{key:'Ambulance', value: '112', valueTel: 'tel:112'},{key:'Police', value: '101',valueTel:'tel:101'},{key:'Medical Service', value: '100',valueTel:'tel:100'},{key:'Fire', value: '100',valueTel:'tel:100'},{key:'Pharmacy', value: 'Website',valueTel:'https://www.pharmacie.be/'},{key:'Region', value: 'Belgium',valueTel:''}];
@@ -128,7 +129,7 @@ return d.getDate()+'-'+months[d.getMonth()] +'-'+d.getFullYear();
                             >
                                {events?.map((even) => (
                                               <MenuItem style={{whiteSpace: 'normal'}} autoFocus={true} divider={true} onClick={handleClose}><Stack direction="row" spacing={1}>{even.type === 'food' ? <FastfoodIcon />: even.type === 'devotional'? <TempleHinduTwoToneIcon />:even.type === 'movie'? <MovieCreationTwoToneIcon />:<CelebrationTwoToneIcon />}
-                                                                                                                                                      <Typography align="justify">{even.name +" on "+dataFormat(even.startDate)}</Typography></Stack></MenuItem>
+                                                                                                                                                      <Typography align="justify">{even.name +" on "+dataFormat(even.startDate)}</Typography><FiberNewTwoToneIcon sx={{ color: 'blue' }} /></Stack></MenuItem>
                                             ))}
                             </Menu>
 
