@@ -71,10 +71,8 @@ export default function CustomizedAccordions({id,key,indexList,answer,author,dat
         {cardDev}
         <div dangerouslySetInnerHTML={{__html: answer ? answer : ''}} />
         <br />
-        <Stack direction="row" spacing={4}>
-          {date ? <Chip label={date} color="primary" variant="outlined" />:''}
+          {date ? <Chip label={date} color="primary" variant="outlined" />:''} <br/><br/>
           {author ? <Chip label={author} color="success" variant="outlined" />:''}
-        </Stack>
         </AccordionDetails>
       </Accordion>
     </div>
