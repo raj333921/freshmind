@@ -52,6 +52,7 @@ const dateCheck = (d1) => {
     const notificationEvent = _.sortBy(_.filter(eventData,function(item) {
                                                          return dateCheck(item.startDate) !== 1;
                                                      }),'endDate');
+
   return (
   <div>
     <div className="">
@@ -60,7 +61,7 @@ const dateCheck = (d1) => {
                        </Box> }
       <ResponsiveAppBar events={notificationEvent}/>
       </div>
-      {indexData ? <Bodyc data={indexData} query={faqData} event={accordianEvent}/> : 'It\'s trying to load ! If you are seeing an empty page, try to refresh browser'}
+      {indexData ? <Bodyc data={indexData} query={faqData} event={accordianEvent} notificationEvent={notificationEvent}/> : 'It\'s trying to load ! If you are seeing an empty page, try to refresh browser'}
     </div>
   );
 }

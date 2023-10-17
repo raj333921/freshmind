@@ -76,16 +76,12 @@ return d.getDate()+'-'+months[d.getMonth()] +'-'+d.getFullYear();
     var date1 = new Date(d1).getTime()+86400000;
     var date2 = new Date().getTime();
     if (date1 === date2) {
-    console.log("dates are equal"+d1);
          return 2;
     } else if (date1 < date2) {
-    console.log("dates are less"+d1);
                return 1;
     }else if (date1 > date2) {
-    console.log("dates are greater"+d1);
          return 2;
     } else {
-    console.log("dates are other"+d1);
          return 2;
     }
   }
