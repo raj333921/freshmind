@@ -18,14 +18,12 @@ export default function CardImage({name,type,count}) {
     <Card sx={{ direction:'flex' }}>
           <CardActionArea>
             <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
+              <Typography gutterBottom variant="body" component="div">
                  {name}
               </Typography>
-              <Typography variant="h3" color="text.warning">
+              <Typography variant="h5" color="text.warning">
 <Stack direction="row" spacing={3}>
-  {count}
-  {type === 'food' ? <FastfoodTwoToneIcon sx={{ fontSize: 50,color: 'red' }} />: type === 'devotional'? <TempleHinduTwoToneIcon sx={{ fontSize: 50,color: 'Green' }}/>:type === 'movie'? <MovieCreationTwoToneIcon sx={{ fontSize: 50,color: '#2571f5' }}/>:<CelebrationTwoToneIcon sx={{ fontSize: 50,color: 'Violet' }}/>}
-
+  {count}  {type === 'food' ? <FastfoodTwoToneIcon sx={{ fontSize: 30,color: 'red' }} />: type === 'devotional'? <TempleHinduTwoToneIcon sx={{ fontSize: 30,color: 'Green' }}/>:type === 'movie'? <MovieCreationTwoToneIcon sx={{ fontSize: 30,color: '#2571f5' }}/>:<CelebrationTwoToneIcon sx={{ fontSize: 30,color: 'Violet' }}/>}
 </Stack>
               </Typography>
             </CardContent>

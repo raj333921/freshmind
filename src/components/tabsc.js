@@ -83,7 +83,7 @@ export default function Tabsc({accordian,accordian_query,searchQuery,search,even
 
             <Grid item xs={2} sm={4} md={4} >
 
-           <CardImage type="food" name="Food Festivals" count={typeEvent('food').length}/><br/>
+           <CardImage type="food" name="Food Fest's" count={typeEvent('food').length}/><br/>
                         </Grid>
         </Grid>
           {event}
