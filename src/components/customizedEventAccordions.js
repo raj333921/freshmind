@@ -73,16 +73,17 @@ return d.getDate()+'-'+months[d.getMonth()] +'-'+d.getFullYear();
 }
 
   const dateCheck = (d1) => {
-    var date1 = new Date(startDate).getTime();
+    var date1 = new Date(d1).getTime()+86400000;
     var date2 = new Date().getTime();
-if (date1 < date2) {
-    return 1;
-  } else if (date1 > date2) {
-    return 2;
-  } else {
-    return 2;
-  }
-
+    if (date1 === date2) {
+         return 2;
+    } else if (date1 < date2) {
+               return 1;
+    }else if (date1 > date2) {
+         return 2;
+    } else {
+         return 2;
+    }
   }
 
   const priceCostBadge = '€';
@@ -95,17 +96,12 @@ if (date1 < date2) {
         <Stack direction="row" spacing={3}>
          {type === 'food' ? <FastfoodIcon />: type === 'devotional'? <TempleHinduTwoToneIcon />:type === 'movie'? <MovieCreationTwoToneIcon />:<CelebrationTwoToneIcon />}
            <Typography>{eventName}</Typography>
-            {dateCheck(startDate) === 1 ? <Chip label="Completed" color="error" variant="outlined" />:<Chip label="Upcoming" color="primary" variant="outlined" />}
+            {dateCheck(endDate) === 1 ? <Chip label="Completed" color="error" variant="outlined" />:<Chip label="Upcoming" color="primary" variant="outlined" />}
 
        </Stack>
        <Stack spacing={3} direction="row">
-             {price === 'P' ? <Badge badgeContent={priceCostBadge} color="warning" anchorOrigin={{
-                                                                            vertical: 'bottom',
-                                                                            horizontal: 'right',
-                                                                          }}/>: (price === 'F')? <Badge badgeContent={freeCostBadge} color="success" anchorOrigin={{
-                                                                                                                                                                                                                        vertical: 'bottom',
-                                                                                                                                                                                                                        horizontal: 'right',
-                                                                                                                                                                                                                      }} />:''}
+             {price === 'P' ? <Badge badgeContent={priceCostBadge} color="warning" anchorOrigin={{vertical: 'bottom',horizontal: 'right'
+              }}/>: (price === 'F')? <Badge badgeContent={freeCostBadge} color="success" anchorOrigin={{ vertical: 'bottom',horizontal: 'right'}} />:''}
            </Stack>
         </AccordionSummary>
         <AccordionDetails>
@@ -120,10 +116,9 @@ if (date1 < date2) {
          {"Pricing: "}+{price === 'P' ? <Badge badgeContent={priceCostBadge} color="warning"/>: (price === 'F')? <Badge badgeContent={freeCostBadge} color="success" />:''}
          <br />
          <br />
-        <Stack direction="row" spacing={1}>
-          {startDate ? <Chip label={"Start : " + dataFormat(startDate)} color="success" variant="outlined" />:''}
+          {startDate ? <Chip label={"Start : " + dataFormat(startDate)} color="success" variant="outlined" />:''}<br /><br />
           {endDate ? <Chip label={"End: "+ dataFormat(endDate)} color="error" variant="outlined" />:''}
-        </Stack>
+
 
 
        <Stack spacing={3} direction="row">

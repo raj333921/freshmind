@@ -7,6 +7,8 @@ import axios from 'axios';
 import Box from '@mui/material/Box';
 import LinearProgress from '@mui/material/LinearProgress';
 import React from 'react';
+import CustomizedEventAccordions from './components/customizedEventAccordions';
+import _ from 'underscore';
 
 function App() {
  const [indexData,setIndexData] = React.useState(null);
@@ -30,6 +32,26 @@ function App() {
      })
    );
  },[]);
+const dataFormat = (dat) => {
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+var d= new Date(dat);
+return d.getDate()+'-'+months[d.getMonth()] +'-'+d.getFullYear();
+}
+const dateCheck = (d1) => {
+    var date1 = new Date(d1).getTime()+86400000;
+    var date2 = new Date().getTime();
+    if (date1 < date2) {
+         return 1;
+    } else if (date1 > date2) {
+         return 2;
+    } else {
+         return 2;
+    }
+    }
+    const accordianEvent = _.sortBy(eventData, 'startDate').reverse().map(link => <CustomizedEventAccordions type={link.type} eventName={link.name+" on "+dataFormat(link.startDate)} endDate={link.endDate} startDate={link.startDate} website={link.website} facebook={link.facebook} whatsapp={link.whatsapp} location={link.mapLocation} price={link.price}/>);
+    const notificationEvent = _.sortBy(_.filter(eventData,function(item) {
+                                                         return dateCheck(item.startDate) !== 1;
+                                                     }),'endDate');
 
   return (
   <div>
@@ -37,9 +59,9 @@ function App() {
        {flag ? "": <Box sx={{ width: '100%' }}>
                          <LinearProgress />
                        </Box> }
-      <ResponsiveAppBar />
+      <ResponsiveAppBar events={notificationEvent}/>
       </div>
-      {indexData ? <Bodyc data={indexData} query={faqData} event={eventData}/> : 'It\'s trying to load ! If you are seeing an empty page, try to refresh browser'}
+      {indexData ? <Bodyc data={indexData} query={faqData} event={accordianEvent} notificationEvent={notificationEvent}/> : 'It\'s trying to load ! If you are seeing an empty page, try to refresh browser'}
     </div>
   );
 }

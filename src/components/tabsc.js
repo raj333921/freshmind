@@ -2,12 +2,17 @@ import * as React from 'react';
 import Tabs from '@mui/material/Tabs';
 import FreeSolo from './freeSolo';
 import FreeSoloQuery from './freeSoloQuery';
+import CardImage from './cardImage';
 import BookmarksIcon from '@mui/icons-material/Bookmarks';
 import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
 import EventAvailableIcon from '@mui/icons-material/EventAvailable';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import _ from 'underscore';
+import Stack from '@mui/material/Stack';
+
+import Grid from '@mui/material/Grid';
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -43,13 +48,17 @@ function a11yProps(index: number) {
   };
 }
 
-export default function Tabsc({accordian,accordian_query,searchQuery,search,event}) {
+export default function Tabsc({accordian,accordian_query,searchQuery,search,event,notificationEvent}) {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
   };
 
+  const typeEvent =(typeStr)=> { return _.sortBy(_.filter(notificationEvent,function(item) {
+                                                               return item.type === typeStr;
+                                                           }),'endDate');
+                                                           }
   return (
     <Box sx={{ width: '100%' }}>
       <Box sx={{ width: '100%', bgcolor: 'background.paper' }}>
@@ -60,6 +69,23 @@ export default function Tabsc({accordian,accordian_query,searchQuery,search,even
             </Tabs>
           </Box>
         <TabPanel value={value} index={0} >
+        <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+            <Grid item xs={2} sm={4} md={4} >
+              <CardImage type="movie" name="Movies" count={typeEvent('movie').length}/><br/>
+            </Grid>
+            <Grid item xs={2} sm={4} md={4} >
+           <CardImage type="celebration" name="Celebrations" count={typeEvent('celebration').length}/><br/>
+                        </Grid>
+
+            <Grid item xs={2} sm={4} md={4} >
+           <CardImage type="devotional" name="Devotional" count={typeEvent('devotional').length}/><br/>
+                        </Grid>
+
+            <Grid item xs={2} sm={4} md={4} >
+
+           <CardImage type="food" name="Food Fest's" count={typeEvent('food').length}/><br/>
+                        </Grid>
+        </Grid>
           {event}
         </TabPanel>
         <TabPanel value={value} index={1} >
