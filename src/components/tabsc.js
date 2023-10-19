@@ -78,18 +78,18 @@ export default function Tabsc({accordian,accordian_query,searchQuery,search,even
           </Box>
         <TabPanel value={value} index={0} >
         <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
-            <Grid item xs={1} sm={4} md={4} onClick={() => {click('movie')}}>
+           {typeEvent('movie').length > 0 ? <Grid item xs={1} sm={4} md={4} onClick={() => {click('movie')}}>
               <CardImage type="movie" name="" count={typeEvent('movie').length}  /><br/>
-            </Grid>
-            <Grid item xs={1} sm={4} md={4} onClick={() => {click('celebration')}}>
+            </Grid>:''}
+            {typeEvent('celebration').length > 0 ?<Grid item xs={1} sm={4} md={4} onClick={() => {click('celebration')}}>
            <CardImage type="celebration" name="" count={typeEvent('celebration').length}/><br/>
-                        </Grid>
-            <Grid item xs={1} sm={4} md={4} onClick={() => {click('devotional')}}>
+                        </Grid>:''}
+           {typeEvent('devotional').length > 0 ? <Grid item xs={1} sm={4} md={4} onClick={() => {click('devotional')}}>
            <CardImage type="devotional" name="" count={typeEvent('devotional').length}/><br/>
-                        </Grid>
-            <Grid item xs={1} sm={4} md={4} onClick={() => {click('food')}}>
+                        </Grid>:''}
+           {typeEvent('food').length > 0 ? <Grid item xs={1} sm={4} md={4} onClick={() => {click('food')}}>
            <CardImage type="food" name="" count={typeEvent('food').length}/><br/>
-                        </Grid>
+                        </Grid>: ''}
         </Grid>
           {eventFilter}
         </TabPanel>
