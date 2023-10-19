@@ -88,6 +88,9 @@ return d.getDate()+'-'+months[d.getMonth()] +'-'+d.getFullYear();
 
   const priceCostBadge = '€';
   const freeCostBadge = '0€';
+  const locationMap = (location) => {
+  return "https://www.google.com/maps/dir/Brussels/"+location;
+  }
   return (
     <div>
       <Accordion sx={{backgroundColor: 'white'}} expanded={expanded === eventName} onChange={handleChange(eventName)}>
@@ -112,7 +115,7 @@ return d.getDate()+'-'+months[d.getMonth()] +'-'+d.getFullYear();
           {whatsapp? <a href={whatsapp} target="_blank" ><WhatsAppIcon /></a>:''}
 
           </Typography><br />
-          {"Location: "+location}<br /><br />
+          Location: {<a href={locationMap(location)} target="_blank" >{location}</a>}<br /><br />
          {"Pricing: "}+{price === 'P' ? <Badge badgeContent={priceCostBadge} color="warning"/>: (price === 'F')? <Badge badgeContent={freeCostBadge} color="success" />:''}
          <br />
          <br />

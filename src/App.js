@@ -48,10 +48,11 @@ const dateCheck = (d1) => {
          return 2;
     }
     }
-    const accordianEvent = _.sortBy(eventData, 'startDate').reverse().map(link => <CustomizedEventAccordions type={link.type} eventName={link.name+" on "+dataFormat(link.startDate)} endDate={link.endDate} startDate={link.startDate} website={link.website} facebook={link.facebook} whatsapp={link.whatsapp} location={link.mapLocation} price={link.price}/>);
     const notificationEvent = _.sortBy(_.filter(eventData,function(item) {
-                                                         return dateCheck(item.startDate) !== 1;
-                                                     }),'endDate');
+                                                             return dateCheck(item.startDate) !== 1;
+                                                         }),'endDate');
+    const accordianEvent = _.sortBy(notificationEvent, 'startDate').map(link => <CustomizedEventAccordions type={link.type} eventName={link.name+" on "+dataFormat(link.startDate)} endDate={link.endDate} startDate={link.startDate} website={link.website} facebook={link.facebook} whatsapp={link.whatsapp} location={link.mapLocation} price={link.price}/>);
+
 
   return (
   <div>

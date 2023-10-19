@@ -70,20 +70,20 @@ export default function Tabsc({accordian,accordian_query,searchQuery,search,even
           </Box>
         <TabPanel value={value} index={0} >
         <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
-            <Grid item xs={2} sm={4} md={4} >
-              <CardImage type="movie" name="Movies" count={typeEvent('movie').length}/><br/>
+            <Grid item xs={1} sm={4} md={4} >
+              <CardImage type="movie" name="" count={typeEvent('movie').length}/><br/>
             </Grid>
-            <Grid item xs={2} sm={4} md={4} >
-           <CardImage type="celebration" name="Celebrations" count={typeEvent('celebration').length}/><br/>
+            <Grid item xs={1} sm={4} md={4} >
+           <CardImage type="celebration" name="" count={typeEvent('celebration').length}/><br/>
                         </Grid>
 
-            <Grid item xs={2} sm={4} md={4} >
-           <CardImage type="devotional" name="Devotional" count={typeEvent('devotional').length}/><br/>
+            <Grid item xs={1} sm={4} md={4} >
+           <CardImage type="devotional" name="" count={typeEvent('devotional').length}/><br/>
                         </Grid>
 
-            <Grid item xs={2} sm={4} md={4} >
+            <Grid item xs={1} sm={4} md={4} >
 
-           <CardImage type="food" name="Food Fest's" count={typeEvent('food').length}/><br/>
+           <CardImage type="food" name="" count={typeEvent('food').length}/><br/>
                         </Grid>
         </Grid>
           {event}
