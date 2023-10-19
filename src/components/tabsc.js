@@ -10,8 +10,7 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import _ from 'underscore';
-import Stack from '@mui/material/Stack';
-
+import CustomizedEventAccordions from './customizedEventAccordions';
 import Grid from '@mui/material/Grid';
 
 interface TabPanelProps {
@@ -50,7 +49,7 @@ function a11yProps(index: number) {
 
 export default function Tabsc({accordian,accordian_query,searchQuery,search,event,notificationEvent}) {
   const [value, setValue] = React.useState(0);
-
+  const [eventFilter, setEventFilter] = React.useState(event);
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
   };
@@ -59,6 +58,15 @@ export default function Tabsc({accordian,accordian_query,searchQuery,search,even
                                                                return item.type === typeStr;
                                                            }),'endDate');
                                                            }
+    const dataFormat = (dat) => {
+        const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        var d= new Date(dat);
+        return d.getDate()+'-'+months[d.getMonth()] +'-'+d.getFullYear();
+    }
+   const accordianEvent = (type)=> _.sortBy(typeEvent(type), 'startDate').map(link => <CustomizedEventAccordions type={link.type} eventName={link.name+" on "+dataFormat(link.startDate)} endDate={link.endDate} startDate={link.startDate} website={link.website} facebook={link.facebook} whatsapp={link.whatsapp} location={link.mapLocation} price={link.price}/>);
+   function click(event){
+        setEventFilter(accordianEvent(event));
+   }
   return (
     <Box sx={{ width: '100%' }}>
       <Box sx={{ width: '100%', bgcolor: 'background.paper' }}>
@@ -70,23 +78,20 @@ export default function Tabsc({accordian,accordian_query,searchQuery,search,even
           </Box>
         <TabPanel value={value} index={0} >
         <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
-            <Grid item xs={1} sm={4} md={4} >
-              <CardImage type="movie" name="" count={typeEvent('movie').length}/><br/>
+            <Grid item xs={1} sm={4} md={4} onClick={() => {click('movie')}}>
+              <CardImage type="movie" name="" count={typeEvent('movie').length}  /><br/>
             </Grid>
-            <Grid item xs={1} sm={4} md={4} >
+            <Grid item xs={1} sm={4} md={4} onClick={() => {click('celebration')}}>
            <CardImage type="celebration" name="" count={typeEvent('celebration').length}/><br/>
                         </Grid>
-
-            <Grid item xs={1} sm={4} md={4} >
+            <Grid item xs={1} sm={4} md={4} onClick={() => {click('devotional')}}>
            <CardImage type="devotional" name="" count={typeEvent('devotional').length}/><br/>
                         </Grid>
-
-            <Grid item xs={1} sm={4} md={4} >
-
+            <Grid item xs={1} sm={4} md={4} onClick={() => {click('food')}}>
            <CardImage type="food" name="" count={typeEvent('food').length}/><br/>
                         </Grid>
         </Grid>
-          {event}
+          {eventFilter}
         </TabPanel>
         <TabPanel value={value} index={1} >
           <FreeSolo search={search} />
