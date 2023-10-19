@@ -12,6 +12,7 @@ import Box from '@mui/material/Box';
 import _ from 'underscore';
 import CustomizedEventAccordions from './customizedEventAccordions';
 import Grid from '@mui/material/Grid';
+import RefreshTwoToneIcon from '@mui/icons-material/RefreshTwoTone';
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -50,6 +51,7 @@ function a11yProps(index: number) {
 export default function Tabsc({accordian,accordian_query,searchQuery,search,event,notificationEvent}) {
   const [value, setValue] = React.useState(0);
   const [eventFilter, setEventFilter] = React.useState(event);
+  const [eventFiltered, setEventFiltered] = React.useState(false);
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
   };
@@ -64,8 +66,13 @@ export default function Tabsc({accordian,accordian_query,searchQuery,search,even
         return d.getDate()+'-'+months[d.getMonth()] +'-'+d.getFullYear();
     }
    const accordianEvent = (type)=> _.sortBy(typeEvent(type), 'startDate').map(link => <CustomizedEventAccordions type={link.type} eventName={link.name+" on "+dataFormat(link.startDate)} endDate={link.endDate} startDate={link.startDate} website={link.website} facebook={link.facebook} whatsapp={link.whatsapp} location={link.mapLocation} price={link.price}/>);
-   function click(event){
-        setEventFilter(accordianEvent(event));
+   function click(events){
+        setEventFiltered(true);
+        setEventFilter(accordianEvent(events));
+   }
+   function clickRefresh(){
+        setEventFiltered(false);
+        setEventFilter(event);
    }
   return (
     <Box sx={{ width: '100%' }}>
@@ -90,7 +97,11 @@ export default function Tabsc({accordian,accordian_query,searchQuery,search,even
            {typeEvent('food').length > 0 ? <Grid item xs={1} sm={4} md={4} onClick={() => {click('food')}}>
            <CardImage type="food" name="" count={typeEvent('food').length}/><br/>
                         </Grid>: ''}
+             {eventFiltered ? <Grid item xs={1} sm={4} md={4} onClick={() => {clickRefresh()}}>
+                <RefreshTwoToneIcon />
+            </Grid>:''}
         </Grid>
+
           {eventFilter}
         </TabPanel>
         <TabPanel value={value} index={1} >
