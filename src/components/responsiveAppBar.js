@@ -22,7 +22,7 @@ import MovieCreationTwoToneIcon from '@mui/icons-material/MovieCreationTwoTone';
 import FiberNewTwoToneIcon from '@mui/icons-material/FiberNewTwoTone';
 
 const pages = [];
-const settings = [{key:'Ambulance', value: '112', valueTel: 'tel:112'},{key:'Police', value: '101',valueTel:'tel:101'},{key:'Medical Service', value: '100',valueTel:'tel:100'},{key:'Fire', value: '100',valueTel:'tel:100'},{key:'Pharmacy', value: 'Website',valueTel:'https://www.pharmacie.be/'},{key:'Region', value: 'Belgium',valueTel:''}];
+const settings = [{key:'Ambulance', value: '112', valueTel: 'tel:112'},{key:'Police', value: '101',valueTel:'tel:101'},{key:'Medical Service', value: '100',valueTel:'tel:100'},{key:'Fire', value: '100',valueTel:'tel:100'},{key:'Pharmacy', value: 'Website',valueTel:'https://www.pharmacie.be/'},{key:'Region', value: 'Belgium',valueTel:''},{key:'Queries?', value: 'Email',valueTel:'mailto:raj333921@gmail.com'}];
 
 function ResponsiveAppBar({length,events}) {
   const [anchorEl, setAnchorEl] = React.useState(null);

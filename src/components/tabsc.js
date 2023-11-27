@@ -13,6 +13,9 @@ import _ from 'underscore';
 import CustomizedEventAccordions from './customizedEventAccordions';
 import Grid from '@mui/material/Grid';
 import RefreshTwoToneIcon from '@mui/icons-material/RefreshTwoTone';
+import { FacebookShareButton, FacebookIcon, WhatsappIcon,WhatsappShareButton,TwitterShareButton,TwitterIcon } from 'react-share';
+import Divider from '@mui/material/Divider';
+import Stack from '@mui/material/Stack';
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -102,7 +105,7 @@ export default function Tabsc({accordian,accordian_query,searchQuery,search,even
             </Grid>:''}
         </Grid>
 
-          {eventFilter}
+          {eventFilter? eventFilter : 'There are no events/shows in and around us'}
         </TabPanel>
         <TabPanel value={value} index={1} >
           <FreeSolo search={search} />
@@ -116,8 +119,37 @@ export default function Tabsc({accordian,accordian_query,searchQuery,search,even
           {accordian_query}
         </TabPanel>
         <TabPanel value={value} index={3} >
-          We love to serve ... ! let you know ;)
+          We love to serve ... ! let you know ;
         </TabPanel>
+        <Divider />
+        <Stack
+          direction="row"
+          justifyContent="center"
+          alignItems="center"
+          spacing={2}
+        >
+        <FacebookShareButton
+                url={'https://www.sachadigi.com/freshmind2'}
+                quote={'Sharing life experiences'}
+                hashtag="#Freshmind"
+              >
+                <FacebookIcon size={32} round />
+              </FacebookShareButton>
+        <WhatsappShareButton
+                        url={'https://www.sachadigi.com/freshmind2'}
+                        title={'Sharing life experiences'}
+                        hashtag="#Freshmind"
+                      >
+                        <WhatsappIcon size={32} round />
+                      </WhatsappShareButton>
+                       <TwitterShareButton
+                                              url={'https://www.sachadigi.com/freshmind2'}
+                                              title={'Sharing life experiences'}
+                                              hashtag="#Freshmind"
+                                            >
+                                              <TwitterIcon size={32} round />
+                                            </TwitterShareButton>
+                      </Stack>
     </Box>
   );
 }
