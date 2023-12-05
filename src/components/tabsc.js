@@ -1,6 +1,8 @@
 import * as React from 'react';
 import Tabs from '@mui/material/Tabs';
 import FreeSolo from './freeSolo';
+
+import DialogSelect from './dialogSelect';
 import FreeSoloQuery from './freeSoloQuery';
 import CardImage from './cardImage';
 import BookmarksIcon from '@mui/icons-material/Bookmarks';
@@ -79,6 +81,14 @@ export default function Tabsc({accordian,accordian_query,searchQuery,search,even
    }
   return (
     <Box sx={{ width: '100%' }}>
+    <Stack
+              direction="row"
+              justifyContent="center"
+              alignItems="center"
+              spacing={2}
+            >
+    <DialogSelect />
+    </Stack>
       <Box sx={{ width: '100%', bgcolor: 'background.paper' }}>
             <Tabs value={value} onChange={handleChange} selectionFollowsFocus centered>
                <Tab icon={<EventAvailableIcon />} iconPosition="end" label="Events" {...a11yProps(0)}/>
