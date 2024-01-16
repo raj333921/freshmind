@@ -45,8 +45,8 @@ export default function DialogSelect() {
                 onChange={handleChange}
                 input={<OutlinedInput label="Country" />}
               >
-                <MenuItem select value={10}>Belgium</MenuItem>
-                <MenuItem value={20}>Netherlands</MenuItem>
+                <MenuItem select value={BE}>Belgium</MenuItem>
+                <MenuItem value={BE}>Netherlands</MenuItem>
               </Select>
             </FormControl>
           </Box>

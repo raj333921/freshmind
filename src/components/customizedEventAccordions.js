@@ -57,7 +57,7 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   borderTop: '1px solid rgba(0, 0, 0, .125)',
 }));
 
-export default function CustomizedEventAccordions({eventName,type,startDate,endDate,website,facebook,whatsapp,location,price}) {
+export default function CustomizedEventAccordions({eventName,type,startDate,endDate,website,facebook,whatsapp,location,price,city,timeSlot,desc}) {
 
   const [expanded, setExpanded] = React.useState('panel1');
 
@@ -109,15 +109,18 @@ return d.getDate()+'-'+months[d.getMonth()] +'-'+d.getFullYear();
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-          To book / register / watch more for information <br /><br />
+          To book / register / watch more for information <br />
+
           {website? <a href={website} target="_blank" ><PublicIcon /></a>:''}
           {facebook? <a href={facebook} target="_blank" ><FacebookIcon /></a>:''}
           {whatsapp? <a href={whatsapp} target="_blank" ><WhatsAppIcon /></a>:''}
-
           </Typography><br />
+          {desc && "Description:"+desc}<br/><br />
           Location: {<a href={locationMap(location)} target="_blank" >{location}</a>}<br /><br />
+          {timeSlot && "Timings: "+ timeSlot}<br/>
          {"Pricing: "}+{price === 'P' ? <Badge badgeContent={priceCostBadge} color="warning"/>: (price === 'F')? <Badge badgeContent={freeCostBadge} color="success" />:''}
          <br />
+         {city && "City: "+city}<br/>
          <br />
           {startDate ? <Chip label={"Start : " + dataFormat(startDate)} color="success" variant="outlined" />:''}<br /><br />
           {endDate ? <Chip label={"End: "+ dataFormat(endDate)} color="error" variant="outlined" />:''}

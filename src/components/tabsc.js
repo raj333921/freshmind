@@ -70,7 +70,7 @@ export default function Tabsc({accordian,accordian_query,searchQuery,search,even
         var d= new Date(dat);
         return d.getDate()+'-'+months[d.getMonth()] +'-'+d.getFullYear();
     }
-   const accordianEvent = (type)=> _.sortBy(typeEvent(type), 'startDate').map(link => <CustomizedEventAccordions type={link.type} eventName={link.name+" on "+dataFormat(link.startDate)} endDate={link.endDate} startDate={link.startDate} website={link.website} facebook={link.facebook} whatsapp={link.whatsapp} location={link.mapLocation} price={link.price}/>);
+   const accordianEvent = (type)=> _.sortBy(typeEvent(type), 'startDate').map(link => <CustomizedEventAccordions type={link.type} eventName={link.name+" on "+dataFormat(link.startDate)} endDate={link.endDate} startDate={link.startDate} website={link.website} facebook={link.facebook} whatsapp={link.whatsapp} location={link.mapLocation} price={link.price}  city={link.city}  desc={link.desc}  timeSlot={link.timeSlot}/>);
    function click(events){
         setEventFiltered(true);
         setEventFilter(accordianEvent(events));
@@ -87,12 +87,11 @@ export default function Tabsc({accordian,accordian_query,searchQuery,search,even
               alignItems="center"
               spacing={2}
             >
-    <DialogSelect />
     </Stack>
       <Box sx={{ width: '100%', bgcolor: 'background.paper' }}>
             <Tabs value={value} onChange={handleChange} selectionFollowsFocus centered>
                <Tab icon={<EventAvailableIcon />} iconPosition="end" label="Events" {...a11yProps(0)}/>
-              <Tab icon={<BookmarksIcon />} label="Go To Web" iconPosition="end" {...a11yProps(1)}/>
+              <Tab icon={<BookmarksIcon />} label="Yellow Pages" iconPosition="end" {...a11yProps(1)}/>
               <Tab icon={<QuestionAnswerIcon />} iconPosition="end" label="Advice" {...a11yProps(2)}/>
             </Tabs>
           </Box>
