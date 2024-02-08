@@ -76,7 +76,7 @@ return d.getDate()+'-'+months[d.getMonth()] +'-'+d.getFullYear();
               textDecoration: 'none',
             }}
           >
-            Fresh Mind 1.0
+            Felpr
           </Typography>
 
           <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
@@ -96,7 +96,7 @@ return d.getDate()+'-'+months[d.getMonth()] +'-'+d.getFullYear();
               textDecoration: 'none',
             }}
           >
-            Fresh Mind
+            Felpr
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
@@ -114,7 +114,7 @@ return d.getDate()+'-'+months[d.getMonth()] +'-'+d.getFullYear();
                       <Tooltip title="Notifications">
                         <IconButton onClick={handleClick} sx={{ p: 1 }}>
                         <Badge badgeContent={events?.length} color="secondary">
-                        <NotificationsTwoToneIcon  sx={{ fontSize: 40,color: "#Yellow" }}/>
+                        <NotificationsTwoToneIcon  sx={{ fontSize: 40 }}/>
                         </Badge>
                         </IconButton>
                       </Tooltip>
@@ -129,7 +129,7 @@ return d.getDate()+'-'+months[d.getMonth()] +'-'+d.getFullYear();
                             >
                                {events?.map((even) => (
                                               <MenuItem style={{whiteSpace: 'normal'}} autoFocus={true} divider={true} onClick={handleClose}><Stack direction="row" spacing={1}>{even.type === 'food' ? <FastfoodIcon />: even.type === 'devotional'? <TempleHinduTwoToneIcon />:even.type === 'movie'? <MovieCreationTwoToneIcon />:<CelebrationTwoToneIcon />}
-                                                                                                                                                      <Typography align="justify">{even.name +" on "+dataFormat(even.startDate)}</Typography><FiberNewTwoToneIcon sx={{ color: 'blue' }} /></Stack></MenuItem>
+                                                                                                                                                      <Typography align="justify">{even.name +" on "+dataFormat(even.startDate)}</Typography><FiberNewTwoToneIcon sx={{ color: '#9FE870' }} /></Stack></MenuItem>
                                             ))}
                             </Menu>
 

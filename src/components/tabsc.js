@@ -140,21 +140,21 @@ export default function Tabsc({accordian,accordian_query,searchQuery,search,even
         <FacebookShareButton
                 url={'https://www.sachadigi.com/freshmind2'}
                 quote={'Sharing life experiences'}
-                hashtag="#Freshmind"
+                hashtag="#Felpr"
               >
                 <FacebookIcon size={32} round />
               </FacebookShareButton>
         <WhatsappShareButton
                         url={'https://www.sachadigi.com/freshmind2'}
                         title={'Sharing life experiences'}
-                        hashtag="#Freshmind"
+                        hashtag="#Felpr"
                       >
                         <WhatsappIcon size={32} round />
                       </WhatsappShareButton>
                        <TwitterShareButton
                                               url={'https://www.sachadigi.com/freshmind2'}
                                               title={'Sharing life experiences'}
-                                              hashtag="#Freshmind"
+                                              hashtag="#Felpr"
                                             >
                                               <TwitterIcon size={32} round />
                                             </TwitterShareButton>

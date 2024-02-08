@@ -9,6 +9,8 @@ import LinearProgress from '@mui/material/LinearProgress';
 import React from 'react';
 import CustomizedEventAccordions from './components/customizedEventAccordions';
 import _ from 'underscore';
+import {createTheme, ThemeProvider} from '@mui/material/styles';
+import {lime, purple} from '@mui/material/colors';
 
 function App() {
  const [indexData,setIndexData] = React.useState(null);
@@ -52,10 +54,19 @@ const dateCheck = (d1) => {
                                                              return dateCheck(item.startDate) !== 1;
                                                          }),'endDate');
     const accordianEvent = _.sortBy(notificationEvent, 'startDate').map(link => <CustomizedEventAccordions type={link.type} eventName={link.name+" on "+dataFormat(link.startDate)} endDate={link.endDate} startDate={link.startDate} website={link.website} facebook={link.facebook} whatsapp={link.whatsapp} location={link.mapLocation} price={link.price}  city={link.city}  desc={link.desc}  timeSlot={link.timeSlot}/>);
-
+  const theme = createTheme({
+    palette: {
+      primary : {
+      main: '#9FE870',
+      light: '#163300',
+      contrastText: '#260A2F'
+      }
+    }
+  })
 
   return (
   <div>
+  <ThemeProvider theme={theme} >
     <div className="">
        {flag ? "": <Box sx={{ width: '100%' }}>
                          <LinearProgress />
@@ -63,6 +74,7 @@ const dateCheck = (d1) => {
       <ResponsiveAppBar events={notificationEvent}/>
       </div>
       {indexData ? <Bodyc data={indexData} query={faqData} event={accordianEvent} notificationEvent={notificationEvent}/> : 'It\'s trying to load ! If you are seeing an empty page, try to refresh browser'}
+    </ThemeProvider>
     </div>
   );
 }
