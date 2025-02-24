@@ -76,7 +76,7 @@ return d.getDate()+'-'+months[d.getMonth()] +'-'+d.getFullYear();
               textDecoration: 'none',
             }}
           >
-            Felpr
+            Sachadigi 2.0
           </Typography>
 
           <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
@@ -84,7 +84,7 @@ return d.getDate()+'-'+months[d.getMonth()] +'-'+d.getFullYear();
             variant="h5"
             noWrap
             component="a"
-            href="/freshmind2"
+            href="/"
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
@@ -96,7 +96,7 @@ return d.getDate()+'-'+months[d.getMonth()] +'-'+d.getFullYear();
               textDecoration: 'none',
             }}
           >
-            Felpr
+            Sachadigi 2.0
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>

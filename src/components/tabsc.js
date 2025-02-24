@@ -90,38 +90,17 @@ export default function Tabsc({accordian,accordian_query,searchQuery,search,even
     </Stack>
       <Box sx={{ width: '100%', bgcolor: 'background.paper' }}>
             <Tabs value={value} onChange={handleChange} selectionFollowsFocus centered>
-               <Tab icon={<EventAvailableIcon />} iconPosition="end" label="Events" {...a11yProps(0)}/>
-              <Tab icon={<BookmarksIcon />} label="Yellow Pages" iconPosition="end" {...a11yProps(1)}/>
-              <Tab icon={<QuestionAnswerIcon />} iconPosition="end" label="Advice" {...a11yProps(2)}/>
+              <Tab icon={<BookmarksIcon />} label="Yellow Pages" iconPosition="end" {...a11yProps(0)}/>
+              <Tab icon={<QuestionAnswerIcon />} iconPosition="end" label="Advice" {...a11yProps(1)}/>
             </Tabs>
           </Box>
-        <TabPanel value={value} index={0} >
-        <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
-           {typeEvent('movie').length > 0 ? <Grid item xs={1} sm={4} md={4} onClick={() => {click('movie')}}>
-              <CardImage type="movie" name="" count={typeEvent('movie').length}  /><br/>
-            </Grid>:''}
-            {typeEvent('celebration').length > 0 ?<Grid item xs={1} sm={4} md={4} onClick={() => {click('celebration')}}>
-           <CardImage type="celebration" name="" count={typeEvent('celebration').length}/><br/>
-                        </Grid>:''}
-           {typeEvent('devotional').length > 0 ? <Grid item xs={1} sm={4} md={4} onClick={() => {click('devotional')}}>
-           <CardImage type="devotional" name="" count={typeEvent('devotional').length}/><br/>
-                        </Grid>:''}
-           {typeEvent('food').length > 0 ? <Grid item xs={1} sm={4} md={4} onClick={() => {click('food')}}>
-           <CardImage type="food" name="" count={typeEvent('food').length}/><br/>
-                        </Grid>: ''}
-             {eventFiltered ? <Grid item xs={1} sm={4} md={4} onClick={() => {clickRefresh()}}>
-                <RefreshTwoToneIcon />
-            </Grid>:''}
-        </Grid>
 
-          {eventFilter? eventFilter : 'There are no events/shows in and around us'}
-        </TabPanel>
-        <TabPanel value={value} index={1} >
+        <TabPanel value={value} index={0} >
           <FreeSolo search={search} />
           <br/>
           {accordian}
         </TabPanel>
-        <TabPanel value={value} index={2} >
+        <TabPanel value={value} index={1} >
           <FreeSoloQuery search={searchQuery} />
                    <br/>
 
@@ -138,23 +117,23 @@ export default function Tabsc({accordian,accordian_query,searchQuery,search,even
           spacing={2}
         >
         <FacebookShareButton
-                url={'https://www.sachadigi.com/freshmind2'}
+                url={'https://www.sachadigi.com/'}
                 quote={'Sharing life experiences'}
-                hashtag="#Felpr"
+                hashtag="#Sachadigi"
               >
                 <FacebookIcon size={32} round />
               </FacebookShareButton>
         <WhatsappShareButton
-                        url={'https://www.sachadigi.com/freshmind2'}
+                        url={'https://www.sachadigi.com/'}
                         title={'Sharing life experiences'}
-                        hashtag="#Felpr"
+                        hashtag="#Sachadigi"
                       >
                         <WhatsappIcon size={32} round />
                       </WhatsappShareButton>
                        <TwitterShareButton
-                                              url={'https://www.sachadigi.com/freshmind2'}
+                                              url={'https://www.sachadigi.com/'}
                                               title={'Sharing life experiences'}
-                                              hashtag="#Felpr"
+                                              hashtag="#Sachadigi"
                                             >
                                               <TwitterIcon size={32} round />
                                             </TwitterShareButton>
